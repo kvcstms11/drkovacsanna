@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Kovács Anna – Esztétikai Orvoslás</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rose:      #CD8F82;
+    --cream:     #FEF5F1;
+    --blush:     #F3D6CE;
+    --navy:      #00336C;
+    --skylight:  #F0F6FC;
+    --ink:       #050909;
+    --white:     #FDFFFD;
+    --font-hd:   'Cormorant Garamond', Georgia, serif;
+    --font-bd:   'Raleway', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-bd);
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 60px;
+    background: rgba(254,245,241,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(205,143,130,0.15);
+    transition: padding 0.4s;
+  }
+  nav.scrolled { padding: 14px 60px; }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .nav-logo svg { height: 38px; width: auto; }
+  .nav-logo-text {
+    font-family: var(--font-hd);
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  .nav-logo-text span {
+    display: block;
+    font-family: var(--font-bd);
+    font-size: 0.55rem;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-top: 2px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+    align-items: center;
+  }
+  .nav-links a {
+    font-family: var(--font-bd);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink);
+    opacity: 0.7;
+    transition: opacity 0.2s, color 0.2s;
+  }
+  .nav-links a:hover { opacity: 1; color: var(--rose); }
+
+  .nav-cta {
+    background: var(--rose);
+    color: var(--white) !important;
+    opacity: 1 !important;
+    padding: 10px 24px;
+    border-radius: 2px;
+    letter-spacing: 0.2em;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: #b87a6d !important; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 82px;
+  }
+  .hero-left {
+    padding: 100px 60px 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-family: var(--font-bd);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 28px;
+  }
+  .hero-title {
+    font-family: var(--font-hd);
+    font-size: clamp(3.2rem, 5vw, 5.2rem);
+    font-weight: 300;
+    line-height: 1.08;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--rose);
+  }
+  .hero-subtitle {
+    font-family: var(--font-bd);
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--ink);
+    opacity: 0.65;
+    max-width: 400px;
+    margin-bottom: 52px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .btn-primary {
+    background: var(--rose);
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-bd);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    border-radius: 2px;
+    transition: background 0.25s, transform 0.2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: #b87a6d; transform: translateY(-1px); }
+
+  .btn-ghost {
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--font-bd);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.2s;
+  }
+  .btn-ghost:hover { opacity: 1; }
+  .btn-ghost::after {
+    content: '→';
+    font-size: 1rem;
+  }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+    background: var(--blush);
+  }
+  .hero-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(205,143,130,0.18) 0%, transparent 60%);
+    z-index: 1;
+  }
+  .hero-img-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #f0c9bf 0%, #e8b5aa 40%, #d9a09a 100%);
+    position: relative;
+  }
+  .hero-watermark {
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    opacity: 0.07;
+    z-index: 0;
+  }
+  .hero-badge {
+    position: absolute;
+    bottom: 48px;
+    left: -24px;
+    z-index: 2;
+    background: var(--white);
+    padding: 20px 28px;
+    border-left: 3px solid var(--rose);
+    box-shadow: 0 8px 40px rgba(5,9,9,0.08);
+  }
+  .hero-badge-num {
+    font-family: var(--font-hd);
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--rose);
+    line-height: 1;
+  }
+  .hero-badge-label {
+    font-family: var(--font-bd);
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.6;
+    margin-top: 4px;
+  }
+
+  /* ── STRIP ── */
+  .strip {
+    background: var(--rose);
+    padding: 18px 60px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    overflow: hidden;
+  }
+  .strip-item {
+    font-family: var(--font-bd);
+    font-size: 0.63rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .strip-item::before {
+    content: '✦';
+    font-size: 0.5rem;
+    opacity: 0.7;
+  }
+
+  /* ── ABOUT ── */
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+  }
+  .about-visual {
+    background: var(--skylight);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+  }
+  .about-visual-inner {
+    width: 100%;
+    background: linear-gradient(180deg, #dce9f5 0%, #c9daf0 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-accent-block {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 120px;
+    height: 120px;
+    background: var(--rose);
+    opacity: 0.12;
+    border-radius: 50%;
+  }
+  .about-accent-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--rose), transparent);
+  }
+  .about-content {
+    padding: 100px 80px 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--white);
+  }
+  .section-eyebrow {
+    font-family: var(--font-bd);
+    font-size: 0.63rem;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-family: var(--font-hd);
+    font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 28px;
+  }
+  .section-title em { font-style: italic; color: var(--rose); }
+  .section-body {
+    font-family: var(--font-bd);
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--ink);
+    opacity: 0.7;
+    margin-bottom: 40px;
+    max-width: 420px;
+  }
+  .credentials {
+    display: flex;
+    gap: 32px;
+    margin-top: 12px;
+  }
+  .cred-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cred-num {
+    font-family: var(--font-hd);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--rose);
+    line-height: 1;
+  }
+  .cred-label {
+    font-family: var(--font-bd);
+    font-size: 0.63rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.55;
+  }
+
+  /* Portrait placeholder in about */
+  .portrait-frame {
+    width: 320px;
+    height: 420px;
+    background: linear-gradient(170deg, #b8cfe8 0%, #9ab8d8 100%);
+    position: relative;
+    border-radius: 2px;
+  }
+  .portrait-frame::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(205,143,130,0.4);
+    border-radius: 2px;
+    z-index: -1;
+  }
+
+  /* ── SERVICES ── */
+  .services {
+    padding: 120px 60px;
+    background: var(--cream);
+  }
+  .services-header {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+  .service-card {
+    background: var(--white);
+    padding: 52px 44px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: default;
+  }
+  .service-card:hover { transform: translateY(-4px); }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--rose);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-num {
+    font-family: var(--font-hd);
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--rose);
+    opacity: 0.2;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .service-name {
+    font-family: var(--font-hd);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .service-desc {
+    font-family: var(--font-bd);
+    font-size: 0.82rem;
+    font-weight: 300;
+    color: var(--ink);
+    opacity: 0.6;
+    line-height: 1.85;
+  }
+  .service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    font-family: var(--font-bd);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose);
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+  .service-link:hover { gap: 14px; }
+
+  /* ── PHILOSOPHY ── */
+  .philosophy {
+    background: var(--ink);
+    padding: 140px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .philosophy::before {
+    content: 'AK';
+    position: absolute;
+    font-family: var(--font-hd);
+    font-size: 28vw;
+    font-weight: 600;
+    color: rgba(205,143,130,0.04);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    letter-spacing: -0.05em;
+  }
+  .philosophy-quote {
+    font-family: var(--font-hd);
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.3;
+    max-width: 760px;
+    margin: 0 auto 36px;
+    position: relative;
+  }
+  .philosophy-quote::before {
+    content: '\201C';
+    font-size: 6rem;
+    color: var(--rose);
+    opacity: 0.5;
+    line-height: 0;
+    vertical-align: -0.5em;
+    margin-right: 8px;
+  }
+  .philosophy-attr {
+    font-family: var(--font-bd);
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--rose);
+    opacity: 0.8;
+  }
+
+  /* ── PROCESS ── */
+  .process {
+    padding: 120px 60px;
+    background: var(--white);
+  }
+  .process-header {
+    margin-bottom: 80px;
+    max-width: 480px;
+  }
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+  }
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 40px;
+    right: 40px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--rose) 0%, var(--blush) 100%);
+    opacity: 0.3;
+  }
+  .process-step {
+    padding: 0 32px 0 0;
+    position: relative;
+  }
+  .step-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid var(--rose);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    background: var(--white);
+    position: relative;
+    z-index: 1;
+  }
+  .step-num {
+    font-family: var(--font-hd);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--rose);
+  }
+  .step-title {
+    font-family: var(--font-hd);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .step-desc {
+    font-family: var(--font-bd);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--ink);
+    opacity: 0.6;
+    line-height: 1.8;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials {
+    padding: 120px 60px;
+    background: var(--cream);
+  }
+  .testimonials-header {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .testi-card {
+    background: var(--white);
+    padding: 44px 40px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+  }
+  .testi-card:hover { border-color: var(--rose); }
+  .testi-stars {
+    color: var(--rose);
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  .testi-text {
+    font-family: var(--font-hd);
+    font-size: 1.15rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .testi-name {
+    font-family: var(--font-bd);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose);
+  }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    background: linear-gradient(135deg, var(--rose) 0%, #b87a6d 100%);
+    padding: 120px 60px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+  }
+  .cta-title {
+    font-family: var(--font-hd);
+    font-size: clamp(2.2rem, 4vw, 3.6rem);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 1.15;
+    max-width: 580px;
+  }
+  .cta-title em { font-style: italic; }
+  .btn-white {
+    background: var(--white);
+    color: var(--rose);
+    text-decoration: none;
+    font-family: var(--font-bd);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 18px 44px;
+    border-radius: 2px;
+    white-space: nowrap;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+  }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(5,9,9,0.15); }
+
+  /* ── CONTACT ── */
+  .contact {
+    padding: 120px 60px;
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+  }
+  .contact-info { padding-top: 8px; }
+  .contact-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 32px;
+  }
+  .contact-label {
+    font-family: var(--font-bd);
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--rose);
+  }
+  .contact-value {
+    font-family: var(--font-hd);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--ink);
+  }
+  .contact-value a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .contact-value a:hover { color: var(--rose); }
+  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-label {
+    font-family: var(--font-bd);
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    opacity: 0.5;
+  }
+  .form-input, .form-textarea {
+    background: var(--cream);
+    border: 1px solid rgba(205,143,130,0.2);
+    border-radius: 2px;
+    padding: 14px 18px;
+    font-family: var(--font-bd);
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .form-input:focus, .form-textarea:focus {
+    border-color: var(--rose);
+    background: var(--white);
+  }
+  .form-textarea { resize: vertical; min-height: 120px; }
+  .form-submit {
+    background: var(--rose);
+    color: var(--white);
+    border: none;
+    font-family: var(--font-bd);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    cursor: pointer;
+    border-radius: 2px;
+    align-self: flex-start;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .form-submit:hover { background: #b87a6d; transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    padding: 60px 60px 40px;
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(253,255,253,0.08);
+    margin-bottom: 36px;
+  }
+  .footer-brand {}
+  .footer-logo {
+    font-family: var(--font-hd);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: var(--cream);
+    margin-bottom: 16px;
+    display: block;
+  }
+  .footer-tagline {
+    font-family: var(--font-bd);
+    font-size: 0.78rem;
+    font-weight: 300;
+    color: rgba(254,245,241,0.45);
+    line-height: 1.7;
+    max-width: 220px;
+  }
+  .footer-col-title {
+    font-family: var(--font-bd);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: 20px;
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a {
+    font-family: var(--font-bd);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgba(254,245,241,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--rose); }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-copy {
+    font-family: var(--font-bd);
+    font-size: 0.72rem;
+    font-weight: 300;
+    color: rgba(254,245,241,0.3);
+  }
+  .footer-social {
+    display: flex;
+    gap: 16px;
+  }
+  .footer-social a {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(205,143,130,0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(205,143,130,0.6);
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .footer-social a:hover { border-color: var(--rose); color: var(--rose); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-in {
+    animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.22s; }
+  .delay-3 { animation-delay: 0.36s; }
+  .delay-4 { animation-delay: 0.5s; }
+
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── LOGO SVG INLINE ── */
+  /* We'll draw the AK logo as SVG approximation */
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 60 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- AK monogram simplified -->
+      <text x="2" y="38" font-family="Cormorant Garamond, Georgia, serif" font-size="44" font-weight="400" fill="#CD8F82">AK</text>
+    </svg>
+    <div class="nav-logo-text">
+      Dr. Anna Kovács
+      <span>Esztétikai Orvoslás</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#rolam">Rólam</a></li>
+    <li><a href="#szolgaltatasok">Kezelések</a></li>
+    <li><a href="#folyamat">Folyamat</a></li>
+    <li><a href="#velemenyek">Vélemények</a></li>
+    <li><a href="#kapcsolat" class="nav-cta">Időpontfoglalás</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow animate-in">Esztétikai Orvoslás · Bécs, Ausztria</p>
+    <h1 class="hero-title animate-in delay-1">
+      Természetes<br>szépség,<br><em>tudományos</em><br>alapon
+    </h1>
+    <p class="hero-subtitle animate-in delay-2">
+      Az esztétikai medicina nem a változásról szól — hanem arról, hogy a legjobb énjévé váljon. Minden kezelés egyedi, minden eredmény harmonikus.
+    </p>
+    <div class="hero-actions animate-in delay-3">
+      <a href="#kapcsolat" class="btn-primary">Foglaljon időpontot</a>
+      <a href="#szolgaltatasok" class="btn-ghost">Kezelések</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-placeholder">
+      <!-- Photo goes here -->
+      <svg viewBox="0 0 300 400" class="hero-watermark" style="position:absolute;bottom:-20px;right:-10px;opacity:0.06;width:85%">
+        <text x="-20" y="300" font-family="Cormorant Garamond,serif" font-size="300" font-weight="600" fill="#CD8F82">AK</text>
+      </svg>
+    </div>
+    <div class="hero-badge">
+      <div class="hero-badge-num">8+</div>
+      <div class="hero-badge-label">Év tapasztalat</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-item">Botox & Fillerek</div>
+  <div class="strip-item">Bőrfiatalítás</div>
+  <div class="strip-item">Esztétikai tanácsadás</div>
+  <div class="strip-item">Személyre szabott kezelések</div>
+  <div class="strip-item">Természetes eredmények</div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="rolam">
+  <div class="about-visual">
+    <div class="about-visual-inner">
+      <div class="portrait-frame"></div>
+      <div class="about-accent-block"></div>
+      <div class="about-accent-line"></div>
+    </div>
+  </div>
+  <div class="about-content">
+    <p class="section-eyebrow reveal">Rólam</p>
+    <h2 class="section-title reveal">Az orvos, aki<br><em>meghallgat</em></h2>
+    <p class="section-body reveal">
+      Dr. Kovács Anna esztétikai orvosként hisz abban, hogy minden beavatkozást mély szakmai tudás és empátia vezérel. Célom nem az átváltozás, hanem az, hogy mindenki a saját bőrében érezze jól magát.
+    </p>
+    <p class="section-body reveal" style="margin-top:-12px">
+      Képesítéseimet Bécsben és Budapesten szereztem, munkám során több ezer elégedett pácienssel dolgoztam együtt. A természetes esztétika híve vagyok — kevesebb néha több.
+    </p>
+    <div class="credentials reveal">
+      <div class="cred-item">
+        <div class="cred-num">1200+</div>
+        <div class="cred-label">Kezelt páciens</div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">8</div>
+        <div class="cred-label">Év tapasztalat</div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-num">100%</div>
+        <div class="cred-label">Személyes ellátás</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="szolgaltatasok">
+  <div class="services-header">
+    <p class="section-eyebrow reveal">Kezelések</p>
+    <h2 class="section-title reveal">Minden, amire <em>szüksége van</em></h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-name">Botox & Izomrelaxáció</div>
+      <p class="service-desc">Ráncok kezelése, mimikai vonalak finomítása orvosi botulinum toxinnal. Természetes, friss megjelenés, hosszantartó eredményekkel.</p>
+      <a href="#kapcsolat" class="service-link">Részletek →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">02</div>
+      <div class="service-name">Hialuronsavas Fillerek</div>
+      <p class="service-desc">Ajak- és arcvolumen helyreállítása, mélyebb ráncok kezelése. Azonnali, látványos, mégis természetes eredmény.</p>
+      <a href="#kapcsolat" class="service-link">Részletek →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">03</div>
+      <div class="service-name">Bőrfiatalítás</div>
+      <p class="service-desc">Profhilo, Skinbooster és egyéb bőrregenerációs kezelések az arcbőr minőségének javítására, ragyogó, hidratált bőrért.</p>
+      <a href="#kapcsolat" class="service-link">Részletek →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">04</div>
+      <div class="service-name">Plazma Terápia</div>
+      <p class="service-desc">PRP kezelés a sejtek természetes megújulásának serkentésére. Saját véréből nyert növekedési faktorok a bőr regenerációjáért.</p>
+      <a href="#kapcsolat" class="service-link">Részletek →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">05</div>
+      <div class="service-name">Esztétikai Tanácsadás</div>
+      <p class="service-desc">Személyes konzultáció, ahol részletesen megbeszéljük céljait, lehetőségeit és a legmegfelelőbb kezelési tervet összeállítjuk.</p>
+      <a href="#kapcsolat" class="service-link">Részletek →</a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">06</div>
+      <div class="service-name">Komplex Arcfiatalítás</div>
+      <p class="service-desc">Kombinált kezelési protokollok az optimális eredményért. Az egész arcot figyelembe vevő, holisztikus esztétikai megközelítés.</p>
+      <a href="#kapcsolat" class="service-link">Részletek →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY QUOTE -->
+<section class="philosophy">
+  <blockquote class="philosophy-quote reveal">
+    A valódi esztétikai medicina nem az, amit mások látnak — hanem az, amit te érzel.
+  </blockquote>
+  <p class="philosophy-attr reveal">— Dr. Kovács Anna</p>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="folyamat">
+  <div class="process-header">
+    <p class="section-eyebrow reveal">A folyamat</p>
+    <h2 class="section-title reveal">Négy lépés a<br><em>tökéletes</em> eredményig</h2>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <div class="step-circle"><span class="step-num">1</span></div>
+      <div class="step-title">Konzultáció</div>
+      <p class="step-desc">Részletes megbeszélés céljairól, kívánságairól és a lehetséges kezelési lehetőségekről.</p>
+    </div>
+    <div class="process-step reveal delay-1">
+      <div class="step-circle"><span class="step-num">2</span></div>
+      <div class="step-title">Tervezés</div>
+      <p class="step-desc">Személyre szabott kezelési terv összeállítása, az Ön arcának arányait és igényeit figyelembe véve.</p>
+    </div>
+    <div class="process-step reveal delay-2">
+      <div class="step-circle"><span class="step-num">3</span></div>
+      <div class="step-title">Kezelés</div>
+      <p class="step-desc">Precíz, gondos beavatkozás kényelmes, diszkrét környezetben, maximális biztonság mellett.</p>
+    </div>
+    <div class="process-step reveal delay-3">
+      <div class="step-circle"><span class="step-num">4</span></div>
+      <div class="step-title">Utánkövetés</div>
+      <p class="step-desc">Az eredmények ellenőrzése, szükség szerint finomítás. Az Ön elégedettsége az elsődleges szempont.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="velemenyek">
+  <div class="testimonials-header">
+    <p class="section-eyebrow reveal">Vélemények</p>
+    <h2 class="section-title reveal">Amint pácienseim <em>mondják</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Dr. Kovács Anna pontosan azt nyújtotta, amire vágytam — természetes, friss megjelenést. Soha nem éreztem nyomást, minden kezelés előtt részletesen elmagyarázott mindent."</p>
+      <div class="testi-name">— M. Éva, Bécs</div>
+    </div>
+    <div class="testi-card reveal delay-1">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Az első konzultációtól fogva biztos voltam, hogy jó helyen járok. A szakértelme és az empatikus hozzáállása egyedülálló. Eredményem tökéletes."</p>
+      <div class="testi-name">— K. Petra, Budapest</div>
+    </div>
+    <div class="testi-card reveal delay-2">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Évekkel ezelőtt más orvosnál nem voltam elégedett az eredménnyel. Dr. Kovácsnál végre azt kaptam, amit szerettem volna — magabiztos vagyok a bőrömben."</p>
+      <div class="testi-name">— H. Zsófia, Graz</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-title reveal">
+    Kezdje el útját a<br><em>legjobb énje felé</em>
+  </h2>
+  <a href="#kapcsolat" class="btn-white reveal">Foglaljon időpontot</a>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="kapcsolat">
+  <div class="contact-info">
+    <p class="section-eyebrow reveal">Kapcsolat</p>
+    <h2 class="section-title reveal">Vegyük fel<br>a <em>kapcsolatot</em></h2>
+    <div class="contact-detail reveal">
+      <span class="contact-label">Telefon</span>
+      <span class="contact-value"><a href="tel:+43123456789">+43 123 456 789</a></span>
+    </div>
+    <div class="contact-detail reveal">
+      <span class="contact-label">E-mail</span>
+      <span class="contact-value"><a href="mailto:info@drkovacsanna.at">info@drkovacsanna.at</a></span>
+    </div>
+    <div class="contact-detail reveal">
+      <span class="contact-label">Weboldal</span>
+      <span class="contact-value"><a href="https://drkovacsanna.at">drkovacsanna.at</a></span>
+    </div>
+    <div class="contact-detail reveal">
+      <span class="contact-label">Instagram</span>
+      <span class="contact-value"><a href="#">@drkovacsanna</a></span>
+    </div>
+  </div>
+  <div class="contact-form">
+    <p class="section-eyebrow reveal">Üzenet küldése</p>
+    <div class="form-row">
+      <div class="form-group reveal">
+        <label class="form-label">Neve</label>
+        <input type="text" class="form-input" placeholder="Kovács Anna">
+      </div>
+      <div class="form-group reveal delay-1">
+        <label class="form-label">E-mail</label>
+        <input type="email" class="form-input" placeholder="anna@example.com">
+      </div>
+    </div>
+    <div class="form-group reveal">
+      <label class="form-label">Telefonszám</label>
+      <input type="tel" class="form-input" placeholder="+43 ...">
+    </div>
+    <div class="form-group reveal">
+      <label class="form-label">Kezelés érdeklődés</label>
+      <input type="text" class="form-input" placeholder="pl. Botox, Filler, Konzultáció...">
+    </div>
+    <div class="form-group reveal">
+      <label class="form-label">Üzenet</label>
+      <textarea class="form-textarea" placeholder="Írjon röviden kérdéséről vagy kívánságáról..."></textarea>
+    </div>
+    <button class="form-submit reveal">Üzenet küldése</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-logo">Dr. Anna Kovács</span>
+      <p class="footer-tagline">Esztétikai orvoslás, ahol a szakértelem és az empátia találkozik.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Kezelések</div>
+      <ul class="footer-links">
+        <li><a href="#">Botox</a></li>
+        <li><a href="#">Hialuronsav</a></li>
+        <li><a href="#">Bőrfiatalítás</a></li>
+        <li><a href="#">Plazma terápia</a></li>
+        <li><a href="#">Konzultáció</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigáció</div>
+      <ul class="footer-links">
+        <li><a href="#rolam">Rólam</a></li>
+        <li><a href="#folyamat">A folyamat</a></li>
+        <li><a href="#velemenyek">Vélemények</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Jogi</div>
+      <ul class="footer-links">
+        <li><a href="#">Adatvédelem</a></li>
+        <li><a href="#">Impresszum</a></li>
+        <li><a href="#">Sütik</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Dr. Kovács Anna. Minden jog fenntartva. drkovacsanna.at</p>
+    <div class="footer-social">
+      <a href="#" title="Instagram">ig</a>
+      <a href="#" title="Facebook">fb</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky nav
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        e.target.style.transitionDelay = e.target.classList.contains('delay-1') ? '0.12s'
+          : e.target.classList.contains('delay-2') ? '0.24s'
+          : e.target.classList.contains('delay-3') ? '0.36s' : '0s';
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+</script>
+</body>
+</html>
