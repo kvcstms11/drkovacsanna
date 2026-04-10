@@ -139,6 +139,62 @@ footer{background:var(--ink);padding:52px 56px 34px}
 [data-l].on{display:block}
 span[data-l],a[data-l]{display:none}
 span[data-l].on,a[data-l].on{display:inline}
+
+/* ─── MOBILE ─── */
+@media(max-width:768px){
+  /* NAV */
+  nav{padding:14px 20px}
+  nav.scrolled{padding:11px 20px}
+  .nav-name span{display:none}
+  .nav-links{gap:0}
+  .nav-links li:not(:last-child){display:none}
+  .nav-cta{padding:8px 16px;font-size:.58rem}
+  .lang-sw{padding-left:12px}
+
+  /* HERO */
+  .hero{grid-template-columns:1fr;grid-template-rows:auto auto;padding-top:70px;min-height:auto}
+  .hero-left{padding:48px 24px 36px;order:1}
+  .hero-title{font-size:clamp(2.6rem,11vw,3.8rem)}
+  .hero-sub{max-width:100%}
+  .hero-right{order:2;min-height:55vw;max-height:70vh}
+  .hero-photo{height:68vw;max-width:100%;object-position:top center}
+  .hero-bg-letter{font-size:80vw;right:-10%;bottom:-5%}
+
+  /* ABOUT */
+  .about{padding:56px 24px}
+  .about-inner{grid-template-columns:1fr;gap:36px}
+  .cred-bar{gap:20px}
+
+  /* TREATMENTS */
+  .treatments{padding:64px 24px}
+  .t-grid{grid-template-columns:1fr 1fr}
+
+  /* PHILOSOPHY */
+  .phil{padding:72px 24px}
+
+  /* EDUCATION */
+  .edu{padding:64px 24px}
+  .edu-outer{grid-template-columns:1fr;gap:40px}
+  .edu-giant{font-size:clamp(2.6rem,10vw,4.5rem)}
+  .edu-grid{grid-template-columns:1fr}
+
+  /* FOOTER */
+  footer{padding:44px 24px 28px}
+  .foot-inner{grid-template-columns:1fr;gap:32px}
+
+  /* MISC */
+  .phil-q{font-size:clamp(1.4rem,6vw,2.2rem)}
+}
+
+@media(max-width:480px){
+  .t-grid{grid-template-columns:1fr}
+  .tc{padding:32px 24px}
+  .hero-photo{height:75vw}
+  .hero-left{padding:40px 20px 28px}
+  .about{padding:44px 20px}
+  .treatments,.edu,.phil{padding:52px 20px}
+  footer{padding:36px 20px 24px}
+}
 </style>
 </head>
 <body>
