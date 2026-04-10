@@ -94,23 +94,21 @@ nav.scrolled{padding:13px 56px}
 
 /* EDUCATION */
 .edu{padding:108px 56px;background:var(--cream)}
-.edu-title-block{margin-bottom:72px}
-.edu-giant{font-family:var(--hd);font-size:clamp(4rem,9vw,10rem);font-weight:300;line-height:1;color:var(--ink);letter-spacing:-.02em;margin-bottom:0}
-.edu-giant em{font-style:italic;color:var(--rose)}
-.edu-subtitle{font-family:var(--bd);font-size:.84rem;font-weight:300;opacity:.55;max-width:480px;margin-top:20px;line-height:1.85}
-.edu-body{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start}
+.edu-outer{display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start}
 .edu-left{}
-.edu-deg{font-family:var(--hd);font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:2px}
-.edu-sub{font-family:var(--bd);font-size:.68rem;font-weight:300;color:var(--ink);opacity:.4;letter-spacing:.07em;margin-bottom:16px}
-.edu-divider{width:36px;height:1px;background:var(--rose);margin:28px 0 22px}
+.edu-giant{font-family:var(--hd);font-size:clamp(3rem,6vw,7rem);font-weight:300;line-height:1.02;color:var(--ink);letter-spacing:-.02em;margin-bottom:20px}
+.edu-giant em{font-style:italic;color:var(--rose)}
+.edu-subtitle{font-family:var(--bd);font-size:.82rem;font-weight:300;opacity:.52;margin-bottom:36px;line-height:1.85}
+.edu-deg{font-family:var(--hd);font-size:1rem;font-weight:400;color:var(--ink);margin-bottom:2px}
+.edu-sub{font-family:var(--bd);font-size:.65rem;font-weight:300;color:var(--ink);opacity:.4;letter-spacing:.06em;margin-bottom:14px}
+.edu-divider{width:36px;height:1px;background:var(--rose);margin:24px 0 20px}
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.edu-aaam{grid-column:1/-1;padding:18px 0;border-bottom:1px solid rgba(205,143,130,.25);display:flex;align-items:center;gap:14px;margin-bottom:0}
+.edu-aaam{grid-column:1/-1;padding:18px 0;border-bottom:1px solid rgba(205,143,130,.25);display:flex;align-items:center;gap:14px}
 .edu-star{color:var(--rose);font-size:1rem}
 .edu-aaam-t{font-family:var(--bd);font-size:.76rem;font-weight:400;color:var(--ink);line-height:1.4}
 .edu-aaam-t strong{color:var(--rose);font-weight:600}
-.edu-item{padding:13px 16px 13px 0;border-bottom:1px solid rgba(205,143,130,.15);font-family:var(--bd);font-size:.72rem;font-weight:300;color:var(--ink);opacity:.55;line-height:1.5;display:flex;align-items:flex-start;gap:8px}
+.edu-item{padding:12px 14px 12px 0;border-bottom:1px solid rgba(205,143,130,.15);font-family:var(--bd);font-size:.71rem;font-weight:300;color:var(--ink);opacity:.55;line-height:1.5;display:flex;align-items:flex-start;gap:8px}
 .edu-dot{width:4px;height:4px;border-radius:50%;background:var(--rose);opacity:.6;flex-shrink:0;margin-top:7px}
-.edu-divider2{width:36px;height:1px;background:var(--rose);margin:28px 0 20px}
 
 /* CTA */
 .cta{background:var(--cream);padding:108px 56px;text-align:center}
@@ -255,20 +253,19 @@ span[data-l].on,a[data-l].on{display:inline}
 
 <!-- EDUCATION -->
 <section class="edu" id="kepzesek">
-  <div class="edu-title-block r">
-    <h2 class="edu-giant">
-      <span data-l="hu" class="on">Képzések &<br><em>oklevelek</em></span>
-      <span data-l="de">Fortbildung &<br><em>Zertifikate</em></span>
-      <span data-l="en">Training &<br><em>certificates</em></span>
-    </h2>
-    <p class="edu-subtitle r d1">
-      <span data-l="hu" class="on">Bécs, Budapest és a világ vezető esztétikai akadémiáin szerzett legmodernebb ismeretek és technikák.</span>
-      <span data-l="de">Modernste Kenntnisse und Techniken aus Wien, Budapest und führenden ästhetischen Akademien weltweit.</span>
-      <span data-l="en">State-of-the-art knowledge and techniques from Vienna, Budapest and leading aesthetic academies worldwide.</span>
-    </p>
-  </div>
-  <div class="edu-body">
+  <div class="edu-outer">
     <div class="edu-left r">
+      <h2 class="edu-giant">
+        <span data-l="hu" class="on">Képzések &<br><em>oklevelek</em></span>
+        <span data-l="de">Fortbildung &<br><em>Zertifikate</em></span>
+        <span data-l="en">Training &<br><em>certificates</em></span>
+      </h2>
+      <p class="edu-subtitle">
+        <span data-l="hu" class="on">Bécs, Budapest és a világ vezető esztétikai akadémiáin szerzett legmodernebb ismeretek és technikák.</span>
+        <span data-l="de">Modernste Kenntnisse und Techniken aus Wien, Budapest und führenden ästhetischen Akademien weltweit.</span>
+        <span data-l="en">State-of-the-art knowledge and techniques from Vienna, Budapest and leading aesthetic academies worldwide.</span>
+      </p>
+      <div class="edu-divider"></div>
       <div class="edu-deg"><span data-l="hu" class="on">Orvosi Tanulmányok</span><span data-l="de">Medizinstudium</span><span data-l="en">Medical Studies</span></div>
       <div class="edu-sub">Universität Szeged &amp; Medizinische Universität Wien</div>
       <div class="edu-deg"><span data-l="hu" class="on">Általános Orvosi Képzés</span><span data-l="de">Ausbildung Allgemeinmedizin</span><span data-l="en">General Medicine Training</span></div>
