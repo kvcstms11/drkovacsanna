@@ -93,18 +93,24 @@ nav.scrolled{padding:13px 56px}
 .phil-attr{font-family:var(--bd);font-size:.62rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:rgba(253,255,253,.65)}
 
 /* EDUCATION */
-.edu{padding:108px 56px;background:var(--ink)}
-.edu-inner{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start}
+.edu{padding:108px 56px;background:var(--cream)}
+.edu-title-block{margin-bottom:72px}
+.edu-giant{font-family:var(--hd);font-size:clamp(4rem,9vw,10rem);font-weight:300;line-height:1;color:var(--ink);letter-spacing:-.02em;margin-bottom:0}
+.edu-giant em{font-style:italic;color:var(--rose)}
+.edu-subtitle{font-family:var(--bd);font-size:.84rem;font-weight:300;opacity:.55;max-width:480px;margin-top:20px;line-height:1.85}
+.edu-body{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start}
+.edu-left{}
+.edu-deg{font-family:var(--hd);font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:2px}
+.edu-sub{font-family:var(--bd);font-size:.68rem;font-weight:300;color:var(--ink);opacity:.4;letter-spacing:.07em;margin-bottom:16px}
+.edu-divider{width:36px;height:1px;background:var(--rose);margin:28px 0 22px}
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.edu-aaam{grid-column:1/-1;padding:18px 0;border-bottom:1px solid rgba(205,143,130,.2);display:flex;align-items:center;gap:14px}
+.edu-aaam{grid-column:1/-1;padding:18px 0;border-bottom:1px solid rgba(205,143,130,.25);display:flex;align-items:center;gap:14px;margin-bottom:0}
 .edu-star{color:var(--rose);font-size:1rem}
-.edu-aaam-t{font-family:var(--bd);font-size:.76rem;font-weight:400;color:rgba(254,245,241,.7);line-height:1.4}
+.edu-aaam-t{font-family:var(--bd);font-size:.76rem;font-weight:400;color:var(--ink);line-height:1.4}
 .edu-aaam-t strong{color:var(--rose);font-weight:600}
-.edu-item{padding:13px 16px 13px 0;border-bottom:1px solid rgba(205,143,130,.09);font-family:var(--bd);font-size:.72rem;font-weight:300;color:rgba(254,245,241,.45);line-height:1.5;display:flex;align-items:flex-start;gap:8px}
-.edu-dot{width:4px;height:4px;border-radius:50%;background:var(--rose);opacity:.5;flex-shrink:0;margin-top:7px}
-.edu-deg{font-family:var(--hd);font-size:.92rem;font-weight:400;color:var(--cream);margin-bottom:2px}
-.edu-sub{font-family:var(--bd);font-size:.67rem;font-weight:300;color:rgba(254,245,241,.32);letter-spacing:.07em;margin-bottom:12px}
-.edu-divider{width:36px;height:1px;background:var(--rose);margin:28px 0 20px}
+.edu-item{padding:13px 16px 13px 0;border-bottom:1px solid rgba(205,143,130,.15);font-family:var(--bd);font-size:.72rem;font-weight:300;color:var(--ink);opacity:.55;line-height:1.5;display:flex;align-items:flex-start;gap:8px}
+.edu-dot{width:4px;height:4px;border-radius:50%;background:var(--rose);opacity:.6;flex-shrink:0;margin-top:7px}
+.edu-divider2{width:36px;height:1px;background:var(--rose);margin:28px 0 20px}
 
 /* CTA */
 .cta{background:var(--cream);padding:108px 56px;text-align:center}
@@ -249,16 +255,24 @@ span[data-l].on,a[data-l].on{display:inline}
 
 <!-- EDUCATION -->
 <section class="edu" id="kepzesek">
-  <div class="edu-inner">
-    <div>
-      <p class="eyebrow2 r"><span data-l="hu" class="on">Képzések & Oklevelek</span><span data-l="de">Fortbildung & Zertifikate</span><span data-l="en">Training & Certificates</span></p>
-      <h2 class="st r" style="color:var(--cream)"><span data-l="hu" class="on">Folyamatos<br><em style="color:var(--rose)">tudásbővítés</em></span><span data-l="de">Kontinuierliche<br><em style="color:var(--rose)">Weiterbildung</em></span><span data-l="en">Continuous<br><em style="color:var(--rose)">learning</em></span></h2>
-      <p class="body-t r d1" style="color:rgba(254,245,241,.42)"><span data-l="hu" class="on">Bécs, Budapest és a világ vezető esztétikai akadémiáin szerzett legmodernebb ismeretek.</span><span data-l="de">Modernste Kenntnisse aus Wien, Budapest und führenden ästhetischen Akademien weltweit.</span><span data-l="en">State-of-the-art knowledge from Vienna, Budapest and leading aesthetic academies worldwide.</span></p>
-      <div class="edu-divider"></div>
-      <div class="edu-deg r"><span data-l="hu" class="on">Orvosi Tanulmányok</span><span data-l="de">Medizinstudium</span><span data-l="en">Medical Studies</span></div>
+  <div class="edu-title-block r">
+    <h2 class="edu-giant">
+      <span data-l="hu" class="on">Képzések &<br><em>oklevelek</em></span>
+      <span data-l="de">Fortbildung &<br><em>Zertifikate</em></span>
+      <span data-l="en">Training &<br><em>certificates</em></span>
+    </h2>
+    <p class="edu-subtitle r d1">
+      <span data-l="hu" class="on">Bécs, Budapest és a világ vezető esztétikai akadémiáin szerzett legmodernebb ismeretek és technikák.</span>
+      <span data-l="de">Modernste Kenntnisse und Techniken aus Wien, Budapest und führenden ästhetischen Akademien weltweit.</span>
+      <span data-l="en">State-of-the-art knowledge and techniques from Vienna, Budapest and leading aesthetic academies worldwide.</span>
+    </p>
+  </div>
+  <div class="edu-body">
+    <div class="edu-left r">
+      <div class="edu-deg"><span data-l="hu" class="on">Orvosi Tanulmányok</span><span data-l="de">Medizinstudium</span><span data-l="en">Medical Studies</span></div>
       <div class="edu-sub">Universität Szeged &amp; Medizinische Universität Wien</div>
-      <div class="edu-deg r"><span data-l="hu" class="on">Általános Orvosi Képzés</span><span data-l="de">Ausbildung Allgemeinmedizin</span><span data-l="en">General Medicine Training</span></div>
-      <div class="edu-sub"><span data-l="hu" class="on">Alsó-Ausztria & Stájerország · Sürgősségi orvosi lehrgang</span><span data-l="de">Niederösterreich & Steiermark · Notärztlicher Lehrgang</span><span data-l="en">Lower Austria & Styria · Emergency Medicine Course</span></div>
+      <div class="edu-deg"><span data-l="hu" class="on">Általános Orvosi Képzés</span><span data-l="de">Ausbildung Allgemeinmedizin</span><span data-l="en">General Medicine Training</span></div>
+      <div class="edu-sub"><span data-l="hu" class="on">Alsó-Ausztria & Stájerország · Sürgősségi orvosi lehrgang</span><span data-l="de">Niederösterreich & Steiermark · Notärztlicher Lehrgang</span><span data-l="en">Lower Austria & Styria · Emergency Medicine</span></div>
     </div>
     <div class="r d1">
       <div class="edu-grid">
@@ -268,7 +282,7 @@ span[data-l].on,a[data-l].on{display:inline}
         <div class="edu-item"><span class="edu-dot"></span><span data-l="hu" class="on">Teljes arc harmonizáció HA-val – Teoxane Academy</span><span data-l="de">Full-face Harmonisierung mit HA – Teoxane Academy</span><span data-l="en">Full-face Harmonization with HA – Teoxane Academy</span></div>
         <div class="edu-item"><span class="edu-dot"></span>PDO Facelifting Hands-on Training – Mdexpert Pharma</div>
         <div class="edu-item"><span class="edu-dot"></span>Skinquality-Polyphil Workshop – Croma</div>
-        <div class="edu-item"><span class="edu-dot"></span><span data-l="hu" class="on">Halántékregio, homlok & szemsarok HA-val – Teoxane Budapest</span><span data-l="de">Temporalregion, Stirn & Augenwinkel mit HA – Teoxane Budapest</span><span data-l="en">Temporal Region, Forehead & Eye Corner with HA – Teoxane Budapest</span></div>
+        <div class="edu-item"><span class="edu-dot"></span><span data-l="hu" class="on">Halántékregio, homlok & szemsarok HA-val – Teoxane Budapest</span><span data-l="de">Temporalregion, Stirn & Augenwinkel mit HA – Teoxane Budapest</span><span data-l="en">Temporal Region, Forehead & Eye Corner – Teoxane Budapest</span></div>
         <div class="edu-item"><span class="edu-dot"></span><span data-l="hu" class="on">Bőrminőség & anatómia – Teoxane Academy Budapest</span><span data-l="de">Hautqualität & Anatomie – Teoxane Academy Budapest</span><span data-l="en">Skin Quality & Anatomy – Teoxane Academy Budapest</span></div>
         <div class="edu-item"><span class="edu-dot"></span>Advanced Botulinum Toxin Lower Face – MdExpert Budapest</div>
         <div class="edu-item"><span class="edu-dot"></span><span data-l="hu" class="on">Perioraális régió filler – Teoxane Academy Budapest</span><span data-l="de">Perioral Region Filler – Teoxane Academy Budapest</span><span data-l="en">Perioral Region Filler – Teoxane Academy Budapest</span></div>
@@ -284,14 +298,7 @@ span[data-l].on,a[data-l].on{display:inline}
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-  <p class="eyebrow2 r"><span data-l="hu" class="on">Időpontfoglalás</span><span data-l="de">Termin buchen</span><span data-l="en">Book an Appointment</span></p>
-  <h2 class="st r"><span data-l="hu" class="on">Kezdje el útját a<br><em>legjobb énje felé</em></span><span data-l="de">Beginnen Sie Ihren Weg zur<br><em>besten Version Ihrer selbst</em></span><span data-l="en">Begin your journey to<br><em>your best self</em></span></h2>
-  <p class="body-t r d1"><span data-l="hu" class="on">Dr. Kovács Anna jelenleg a Schönheit2go klinikán rendel Bécsben. Online időpontfoglalás az alábbi linken.</span><span data-l="de">Dr. Anna Kovács ordiniert derzeit in der Klinik Schönheit2go in Wien. Online-Terminbuchung über folgenden Link.</span><span data-l="en">Dr. Anna Kovács currently practices at the Schönheit2go clinic in Vienna. Online booking available below.</span></p>
-  <br><br>
-  <a href="https://www.schoenheit2go.at/terminkalender-drkovacs/" target="_blank" class="btn btn-rose r d2"><span data-l="hu" class="on">Foglaljon időpontot →</span><span data-l="de">Termin buchen →</span><span data-l="en">Book an Appointment →</span></a>
-</section>
+
 
 <!-- FOOTER -->
 <footer>
