@@ -55,24 +55,18 @@ nav.scrolled{padding:13px 56px}
 .hero-bg-letter{position:absolute;right:-6%;bottom:-8%;font-family:var(--hd);font-size:58vw;font-weight:600;color:rgba(205,143,130,0.08);line-height:1;pointer-events:none;user-select:none}
 .hero-photo{position:relative;z-index:1;width:auto;max-width:90%;height:90vh;object-fit:contain;object-position:bottom center;display:block}
 
-/* STRIP */
-.strip{background:var(--ink);padding:14px 56px;display:flex;justify-content:center;gap:52px;flex-wrap:wrap}
-.si{font-family:var(--bd);font-size:.58rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:rgba(254,245,241,.45);display:flex;align-items:center;gap:10px}
-.si::before{content:'—';color:var(--rose)}
-
 /* SHARED */
 .eyebrow2{font-family:var(--bd);font-size:.58rem;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--rose);margin-bottom:16px}
 .st{font-family:var(--hd);font-size:clamp(1.9rem,3vw,3.1rem);font-weight:300;line-height:1.14;margin-bottom:22px}
 .st em{font-style:italic;color:var(--rose)}
 .body-t{font-family:var(--bd);font-size:.84rem;font-weight:300;opacity:.63;line-height:1.9}
 
-/* ABOUT */
-.about{display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
-.about-vis{background:var(--blush);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
-.about-vis-bg{position:absolute;inset:0;background:linear-gradient(160deg,var(--blush) 0%,var(--cream) 100%)}
-.about-photo{position:relative;z-index:1;width:auto;max-width:100%;height:100%;object-fit:contain;object-position:bottom center;display:block}
-.about-content{padding:88px 72px 88px 60px;background:var(--white);display:flex;flex-direction:column;justify-content:center}
-.about-content p+p{margin-top:16px}
+/* ABOUT (below CTA, editorial style) */
+.about{background:var(--white);padding:108px 56px}
+.about-inner{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;max-width:1200px;margin:0 auto}
+.about-left{}
+.about-right p+p{margin-top:18px}
+.about-divider{width:36px;height:1px;background:var(--rose);margin:32px 0 28px}
 .aaam-pill{display:inline-flex;align-items:center;gap:10px;background:var(--blush);border-radius:2px;padding:10px 16px;margin-top:22px;align-self:flex-start}
 .aaam-star{color:var(--rose)}
 .aaam-text{font-family:var(--bd);font-size:.63rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--rose)}
@@ -198,46 +192,6 @@ span[data-l].on,a[data-l].on{display:inline}
   </div>
 </section>
 
-<!-- STRIP -->
-<div class="strip">
-  <div class="si"><span data-l="hu" class="on">Botox & Fillerek</span><span data-l="de">Botox & Filler</span><span data-l="en">Botox & Fillers</span></div>
-  <div class="si"><span data-l="hu" class="on">Microneedling</span><span data-l="de">Microneedling</span><span data-l="en">Microneedling</span></div>
-  <div class="si"><span data-l="hu" class="on">Plazma Lifting</span><span data-l="de">Plasma Lifting</span><span data-l="en">Plasma Lifting</span></div>
-  <div class="si"><span data-l="hu" class="on">Természetes Eredmények</span><span data-l="de">Natürliche Ergebnisse</span><span data-l="en">Natural Results</span></div>
-  <div class="si"><span data-l="hu" class="on">AAAM Ösztöndíjas Orvos</span><span data-l="de">AAAM-Stipendiatin</span><span data-l="en">AAAM Scholar</span></div>
-</div>
-
-<!-- ABOUT -->
-<section class="about" id="rolam">
-  <div class="about-vis">
-    <div class="about-vis-bg"></div>
-    <img src="anna.png" alt="Dr. Kovács Anna" class="about-photo">
-  </div>
-  <div class="about-content">
-    <p class="eyebrow2 r"><span data-l="hu" class="on">Rólam</span><span data-l="de">Über mich</span><span data-l="en">About Me</span></p>
-    <h2 class="st r"><span data-l="hu" class="on">Az orvos, aki<br><em>meghallgat</em></span><span data-l="de">Die Ärztin,<br>die <em>zuhört</em></span><span data-l="en">The doctor<br>who <em>listens</em></span></h2>
-    <p class="body-t r d1">
-      <span data-l="hu" class="on">Dr. Kovács Anna Judit általános orvos, aki a minimalinvazív esztétikai medicina területére specializálódott. Orvosi tanulmányait a Szegedi Tudományegyetemen és a Bécsi Orvostudományi Egyetemen végezte, majd Alsó-Ausztriában és Stájerországban dolgozott általános orvosként — sürgősségi orvosi képesítéssel.</span>
-      <span data-l="de">Mein Name ist Dr. Anna Judit Kovacs — Allgemeinmedizinerin, spezialisiert auf minimalinvasive Methoden in der ästhetischen Medizin. Studium der Humanmedizin an der Universität Szeged und der Medizinischen Universität Wien, anschließend als Ärztin für Allgemeinmedizin in Niederösterreich und der Steiermark tätig, mit notärztlichem Lehrgang.</span>
-      <span data-l="en">Dr. Anna Judit Kovacs is a general practitioner specialised in minimally invasive aesthetic medicine. She studied at the University of Szeged and the Medical University of Vienna, then worked as a GP in Lower Austria and Styria, with emergency medicine certification.</span>
-    </p>
-    <p class="body-t r d2" style="margin-top:16px">
-      <span data-l="hu" class="on">Célja az idő nyomainak finom csökkentése — hogy az arc frisebbnek, kipihentnek és harmonikusabbnak hasson, a természetesség elvesztése nélkül. Mint az American Academy of Aesthetic Medicine 25. jubileumi ösztöndíjának egyik három világszerte kiválasztott orvosa, nemzetközi szakmai elismerést is magáénak tudhat.</span>
-      <span data-l="de">Mein Ziel ist es, die Spuren der Zeit sanft zu reduzieren und das Erscheinungsbild frischer, ausgeruhter und harmonischer wirken zu lassen — ohne dass die Natürlichkeit verloren geht. Als eine von drei Empfängerinnen weltweit des 25. Jubiläumsstipendiums der American Academy of Aesthetic Medicine bringe ich internationale Expertise mit.</span>
-      <span data-l="en">Her goal is to gently reduce the traces of time — making the appearance fresher, more rested and harmonious, without losing natural beauty. As one of three recipients worldwide of the AAAM 25th Anniversary Scholarship, she brings internationally recognised expertise.</span>
-    </p>
-    <div class="aaam-pill r d3">
-      <span class="aaam-star">★</span>
-      <span class="aaam-text"><span data-l="hu" class="on">AAAM 25. Jubileumi Ösztöndíj · 3 orvos egyike világszerte</span><span data-l="de">AAAM 25. Jubiläumsstipendium · Eine von drei weltweit</span><span data-l="en">AAAM 25th Anniversary Scholarship · One of three worldwide</span></span>
-    </div>
-    <div class="cred-bar r d3">
-      <div><div class="cred-num">18+</div><div class="cred-lbl"><span data-l="hu" class="on">Szakmai képzés</span><span data-l="de">Fachkurse</span><span data-l="en">Training Courses</span></div></div>
-      <div><div class="cred-num">2</div><div class="cred-lbl"><span data-l="hu" class="on">Orvosi Egyetem</span><span data-l="de">Medizin. Univ.</span><span data-l="en">Medical Universities</span></div></div>
-      <div><div class="cred-num">100%</div><div class="cred-lbl"><span data-l="hu" class="on">Személyes ellátás</span><span data-l="de">Pers. Betreuung</span><span data-l="en">Personal Care</span></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- TREATMENTS -->
 <section class="treatments" id="kezelesek">
   <div class="t-header">
@@ -306,6 +260,37 @@ span[data-l].on,a[data-l].on{display:inline}
   <p class="body-t r d1"><span data-l="hu" class="on">Dr. Kovács Anna jelenleg a Schönheit2go klinikán rendel Bécsben. Online időpontfoglalás az alábbi linken.</span><span data-l="de">Dr. Anna Kovács ordiniert derzeit in der Klinik Schönheit2go in Wien. Online-Terminbuchung über folgenden Link.</span><span data-l="en">Dr. Anna Kovács currently practices at the Schönheit2go clinic in Vienna. Online booking available below.</span></p>
   <br><br>
   <a href="https://www.schoenheit2go.at/terminkalender-drkovacs/" target="_blank" class="btn btn-rose r d2"><span data-l="hu" class="on">Foglaljon időpontot →</span><span data-l="de">Termin buchen →</span><span data-l="en">Book an Appointment →</span></a>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="rolam">
+  <div class="about-inner">
+    <div class="about-left">
+      <p class="eyebrow2 r"><span data-l="hu" class="on">Rólam</span><span data-l="de">Über mich</span><span data-l="en">About Me</span></p>
+      <h2 class="st r"><span data-l="hu" class="on">Az orvos,<br>aki <em>meghallgat</em></span><span data-l="de">Die Ärztin,<br>die <em>zuhört</em></span><span data-l="en">The doctor<br>who <em>listens</em></span></h2>
+      <div class="aaam-pill r d1">
+        <span class="aaam-star">★</span>
+        <span class="aaam-text"><span data-l="hu" class="on">AAAM · 3 orvos egyike világszerte</span><span data-l="de">AAAM · Eine von drei weltweit</span><span data-l="en">AAAM · One of three worldwide</span></span>
+      </div>
+      <div class="cred-bar r d2">
+        <div><div class="cred-num">18+</div><div class="cred-lbl"><span data-l="hu" class="on">Képzés</span><span data-l="de">Kurse</span><span data-l="en">Courses</span></div></div>
+        <div><div class="cred-num">2</div><div class="cred-lbl"><span data-l="hu" class="on">Egyetem</span><span data-l="de">Universitäten</span><span data-l="en">Universities</span></div></div>
+        <div><div class="cred-num">100%</div><div class="cred-lbl"><span data-l="hu" class="on">Személyes</span><span data-l="de">Persönlich</span><span data-l="en">Personal</span></div></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <p class="body-t r">
+        <span data-l="hu" class="on">Dr. Kovács Anna Judit általános orvos, aki a minimalinvazív esztétikai medicina területére specializálódott. Orvosi tanulmányait a Szegedi Tudományegyetemen és a Bécsi Orvostudományi Egyetemen végezte, majd Alsó-Ausztriában és Stájerországban dolgozott általános orvosként — sürgősségi orvosi képesítéssel.</span>
+        <span data-l="de">Mein Name ist Dr. Anna Judit Kovacs — Allgemeinmedizinerin, spezialisiert auf minimalinvasive Methoden in der ästhetischen Medizin. Studium der Humanmedizin an der Universität Szeged und der Medizinischen Universität Wien, anschließend tätig in Niederösterreich und der Steiermark, mit notärztlichem Lehrgang.</span>
+        <span data-l="en">Dr. Anna Judit Kovacs is a general practitioner specialised in minimally invasive aesthetic medicine. She studied at the University of Szeged and the Medical University of Vienna, then worked as a GP in Lower Austria and Styria, with emergency medicine certification.</span>
+      </p>
+      <p class="body-t r d1">
+        <span data-l="hu" class="on">Célja az idő nyomainak finom csökkentése — hogy az arc frisebbnek, kipihentnek és harmonikusabbnak hasson, a természetesség elvesztése nélkül. Mint az American Academy of Aesthetic Medicine 25. jubileumi ösztöndíjának egyik három világszerte kiválasztott orvosa, nemzetközi szakmai elismerést is magáénak tudhat.</span>
+        <span data-l="de">Mein Ziel ist es, die Spuren der Zeit sanft zu reduzieren und das Erscheinungsbild frischer, ausgeruhter und harmonischer wirken zu lassen — ohne dass die Natürlichkeit verloren geht. Als eine von drei Empfängerinnen weltweit des 25. Jubiläumsstipendiums der American Academy of Aesthetic Medicine bringe ich internationale Expertise mit.</span>
+        <span data-l="en">Her goal is to gently reduce the traces of time — making the appearance fresher, more rested and harmonious, without losing natural beauty. As one of three recipients worldwide of the AAAM 25th Anniversary Scholarship, she brings internationally recognised expertise.</span>
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
