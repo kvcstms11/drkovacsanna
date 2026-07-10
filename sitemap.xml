@@ -10,4 +10,58 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://drkovacsanna.at/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://drkovacsanna.at/"/>
   </url>
+  <url>
+    <loc>https://drkovacsanna.at/wissen.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://drkovacsanna.at/wissen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://drkovacsanna.at/wissen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drkovacsanna.at/wissen.html"/>
+  </url>
+  <url>
+    <loc>https://drkovacsanna.at/wissen-botox.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://drkovacsanna.at/wissen-botox.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://drkovacsanna.at/wissen-botox.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drkovacsanna.at/wissen-botox.html"/>
+  </url>
+  <url>
+    <loc>https://drkovacsanna.at/wissen-lippen.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://drkovacsanna.at/wissen-lippen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://drkovacsanna.at/wissen-lippen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drkovacsanna.at/wissen-lippen.html"/>
+  </url>
+  <url>
+    <loc>https://drkovacsanna.at/wissen-konsultation.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://drkovacsanna.at/wissen-konsultation.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://drkovacsanna.at/wissen-konsultation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drkovacsanna.at/wissen-konsultation.html"/>
+  </url>
+  <url>
+    <loc>https://drkovacsanna.at/wissen-mythen.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://drkovacsanna.at/wissen-mythen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://drkovacsanna.at/wissen-mythen.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drkovacsanna.at/wissen-mythen.html"/>
+  </url>
+  <url>
+    <loc>https://drkovacsanna.at/wissen-nachsorge.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://drkovacsanna.at/wissen-nachsorge.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://drkovacsanna.at/wissen-nachsorge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drkovacsanna.at/wissen-nachsorge.html"/>
+  </url>
 </urlset>
