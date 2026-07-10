@@ -92,6 +92,18 @@ nav.scrolled{padding:13px 56px}
 .phil-q{font-family:var(--hd);font-size:clamp(1.7rem,3.2vw,3rem);font-weight:300;font-style:italic;color:var(--white);line-height:1.35;max-width:700px;margin:0 auto 24px;position:relative}
 .phil-attr{font-family:var(--bd);font-size:.62rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:rgba(253,255,253,.65)}
 
+/* TESTIMONIALS */
+.testi{padding:100px 0 108px;background:var(--white);overflow:hidden}
+.testi-head{text-align:center;margin-bottom:56px;padding:0 56px}
+.testi-track{display:flex;gap:20px;padding:0 56px 20px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--blush) transparent}
+.testi-track::-webkit-scrollbar{height:5px}
+.testi-track::-webkit-scrollbar-thumb{background:var(--blush);border-radius:3px}
+.testi-card{flex:0 0 340px;scroll-snap-align:start;background:var(--cream);padding:36px 32px;border-radius:2px;display:flex;flex-direction:column}
+.testi-stars{color:var(--rose);font-size:.8rem;letter-spacing:3px;margin-bottom:18px}
+.testi-text{font-family:var(--hd);font-size:1.02rem;font-weight:300;font-style:italic;line-height:1.6;margin-bottom:22px;flex:1}
+.testi-name{font-family:var(--bd);font-size:.66rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}
+.testi-src{font-family:var(--bd);font-size:.58rem;font-weight:300;opacity:.35;margin-top:4px;letter-spacing:.06em}
+
 /* EDUCATION */
 .edu{padding:108px 56px;background:var(--cream)}
 .edu-outer{display:grid;grid-template-columns:1fr 2fr;gap:64px;align-items:start}
@@ -172,6 +184,12 @@ span[data-l].on,a[data-l].on{display:inline}
   /* PHILOSOPHY */
   .phil{padding:72px 24px}
 
+  /* TESTIMONIALS */
+  .testi{padding:64px 0 72px}
+  .testi-head{padding:0 24px}
+  .testi-track{padding:0 24px 16px}
+  .testi-card{flex:0 0 82vw}
+
   /* EDUCATION */
   .edu{padding:64px 24px}
   .edu-outer{grid-template-columns:1fr;gap:40px}
@@ -228,7 +246,7 @@ span[data-l].on,a[data-l].on{display:inline}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <p class="eyebrow a a1"><span data-l="hu" class="on">Esztétikai Orvoslás · Bécs, Ausztria</span><span data-l="de">Ästhetische Medizin · Wien, Österreich</span><span data-l="en">Aesthetic Medicine · Vienna, Austria</span></p>
+    <p class="eyebrow a a1"><span data-l="hu" class="on">Esztétikai Orvoslás · Graz, Ausztria</span><span data-l="de">Ästhetische Medizin · Graz, Österreich</span><span data-l="en">Aesthetic Medicine · Graz, Austria</span></p>
     <h1 class="hero-title a a2">
       <span data-l="hu" class="on">Természetes<br>szépség,<br><em>tudományos</em><br>alapon.</span>
       <span data-l="de">Natürliche<br>Schönheit,<br><em>wissenschaftlich</em><br>fundiert.</span>
@@ -307,6 +325,88 @@ span[data-l].on,a[data-l].on{display:inline}
   <p class="phil-attr r d1">— Dr. Kovács Anna</p>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="testi" id="velemenyek">
+  <div class="testi-head">
+    <p class="eyebrow2 r"><span data-l="hu" class="on">Vélemények</span><span data-l="de">Bewertungen</span><span data-l="en">Reviews</span></p>
+    <h2 class="st r"><span data-l="hu" class="on">Amit a páciensek <em>mondanak</em></span><span data-l="de">Was Patienten <em>sagen</em></span><span data-l="en">What patients <em>say</em></span></h2>
+  </div>
+  <div class="testi-track r d1">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Már több kezelésen is részt vettem, és nagyon elégedett vagyok. Hihetetlenül barátságos, időt szán a kezelésekre, és nagyon aprólékosan dolgozik. Mindenkinek ajánlani tudom."</span><span data-l="de">„Ich hatte schon mehrere Behandlungen und bin sehr zufrieden. Unglaublich freundlich, nimmt sich Zeit und arbeitet sehr sorgfältig. Kann ich jedem empfehlen."</span><span data-l="en">"I've had several treatments and I'm very satisfied. Incredibly friendly, takes her time and works very meticulously. I can recommend her to everyone."</span></p>
+      <div class="testi-name">Melanie</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Szemfeltöltő kezelésen voltam, és több mint elégedett vagyok. Már a konzultáció is hihetetlenül kellemes volt – laza, meleg és nagyon profi."</span><span data-l="de">„Ich war zur Augenunterspritzung und bin mehr als zufrieden. Schon die Beratung war unglaublich angenehm – locker, warm und sehr professionell."</span><span data-l="en">"I had an under-eye filler treatment and I'm more than satisfied. Even the consultation was incredibly pleasant – relaxed, warm and very professional."</span></p>
+      <div class="testi-name">Nur E.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Töltőanyaggal kezeltettem az ajkaimat. Nagyon barátságos és profi, az ajkaim nagyon természetesnek tűnnek. Részletesen elmagyarázott mindent. Nagyon ajánlom!"</span><span data-l="de">„Ich habe meine Lippen mit Filler behandeln lassen. Sehr freundlich und professionell, meine Lippen wirken ganz natürlich. Alles wurde genau erklärt. Sehr empfehlenswert!"</span><span data-l="en">"I had my lips treated with filler. Very friendly and professional, my lips look completely natural. Everything was explained in detail. Highly recommended!"</span></p>
+      <div class="testi-name">Tina V.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Botox kezelésen estem át, és nagyon elégedett vagyok. Az arcom természetesen sima és élénk, az eredmény harmonikus. Úgy érzed, kiváló kezekben vagy."</span><span data-l="de">„Ich hatte eine Botox-Behandlung und bin sehr zufrieden. Mein Gesicht ist natürlich glatt und lebendig, das Ergebnis harmonisch. Man fühlt sich in besten Händen."</span><span data-l="en">"I had a Botox treatment and I'm very satisfied. My face is naturally smooth and vibrant, the result is harmonious. You feel you're in excellent hands."</span></p>
+      <div class="testi-name">Zsuzsanna A.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Migrén miatt kezelnek. Atipikus migrénem van, és évekig senki sem tudott segíteni. Dr. Kovács nagyon empatikus, és nagyon kényelmesen érzem magam nála."</span><span data-l="de">„Ich werde wegen Migräne behandelt. Ich habe atypische Migräne und jahrelang konnte mir niemand helfen. Dr. Kovács ist sehr empathisch und ich fühle mich sehr wohl."</span><span data-l="en">"I'm being treated for migraine. I have atypical migraine and for years no one could help. Dr. Kovács is very empathetic and I feel very comfortable with her."</span></p>
+      <div class="testi-name">Petra K.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Rendkívül hozzáértő orvos, mindenkinek ajánlom. Professzionálisan dolgozik! Azoknak, akik természetes eredményre vágynak, ő a tökéletes választás."</span><span data-l="de">„Eine äußerst kompetente Ärztin, ich empfehle sie jedem. Sie arbeitet professionell! Für alle, die ein natürliches Ergebnis wünschen, ist sie die perfekte Wahl."</span><span data-l="en">"An extremely competent doctor, I recommend her to everyone. She works professionally! For those who want natural results, she's the perfect choice."</span></p>
+      <div class="testi-name">Vera F.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Mikrotűs kezelést végeztek nálam, és rendkívül elégedett vagyok. A kezelés kiváló volt, és biztosan visszatérek."</span><span data-l="de">„Ich hatte eine Microneedling-Behandlung und bin äußerst zufrieden. Die Behandlung war ausgezeichnet und ich komme sicher wieder."</span><span data-l="en">"I had a microneedling treatment and I'm extremely satisfied. The treatment was excellent and I'll definitely be back."</span></p>
+      <div class="testi-name">Sylvia M.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Fantasztikus orvos! A kezdetektől fogva nagyon jól éreztem magam. Ráérősen dolgozik, és odafigyel a páciensei igényeire. Nagyon ajánlom!"</span><span data-l="de">„Eine fantastische Ärztin! Ich habe mich von Anfang an sehr wohl gefühlt. Sie arbeitet in Ruhe und achtet auf die Bedürfnisse ihrer Patienten. Sehr zu empfehlen!"</span><span data-l="en">"A fantastic doctor! I felt very comfortable from the start. She works calmly and pays attention to her patients' needs. Highly recommended!"</span></p>
+      <div class="testi-name">Evgenia G.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Többször is jártam már kezelésen, az eredmények mindig kiválóak. Dr. Kovács nagyon jól informált, és jól érzem magam vele."</span><span data-l="de">„Ich war schon mehrmals zur Behandlung, die Ergebnisse sind immer ausgezeichnet. Dr. Kovács ist sehr gut informiert und ich fühle mich wohl bei ihr."</span><span data-l="en">"I've had several treatments and the results are always excellent. Dr. Kovács is very well informed and I feel comfortable with her."</span></p>
+      <div class="testi-name">Waltraud M.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„A hozzáértő és professzionális tanácsai, valamint a barátságossága nagyon megnyugtattak. Ősszel visszatérek egy újabb időpontra."</span><span data-l="de">„Ihre kompetente, professionelle Beratung und ihre Freundlichkeit haben mich sehr beruhigt. Im Herbst komme ich für einen weiteren Termin wieder."</span><span data-l="en">"Her competent, professional advice and friendliness reassured me greatly. I'll be back for another appointment in autumn."</span></p>
+      <div class="testi-name">Silvia S.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Ajakfeltöltésen voltam, és nagyon elégedett vagyok — minden simán és problémamentesen ment."</span><span data-l="de">„Ich war zur Lippenunterspritzung und bin sehr zufrieden — alles verlief reibungslos und problemlos."</span><span data-l="en">"I had a lip filler appointment and I'm very satisfied — everything went smoothly and without any problems."</span></p>
+      <div class="testi-name">Magdalena M.</div>
+      <div class="testi-src">Google</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text"><span data-l="hu" class="on">„Nagyon természetes és szinte fájdalommentes módon végzi a kezelést; szívesen visszatérek hozzá."</span><span data-l="de">„Sie behandelt sehr natürlich und nahezu schmerzfrei; ich komme gerne wieder zu ihr."</span><span data-l="en">"She treats in a very natural and almost painless way; I'd gladly return to her."</span></p>
+      <div class="testi-name">Elli</div>
+      <div class="testi-src">Google</div>
+    </div>
+  </div>
+</section>
+
 <!-- EDUCATION -->
 <section class="edu" id="kepzesek">
   <div class="edu-outer">
@@ -358,7 +458,7 @@ span[data-l].on,a[data-l].on{display:inline}
   <div class="foot-inner">
     <div>
       <span class="foot-logo">Dr. Anna Kovács</span>
-      <p class="foot-tag"><span data-l="hu" class="on">Esztétikai orvoslás, ahol a szakértelem és az empátia találkozik. Bécs, Ausztria.</span><span data-l="de">Ästhetische Medizin, wo Expertise und Empathie zusammentreffen. Wien, Österreich.</span><span data-l="en">Aesthetic medicine where expertise meets empathy. Vienna, Austria.</span></p>
+      <p class="foot-tag"><span data-l="hu" class="on">Esztétikai orvoslás, ahol a szakértelem és az empátia találkozik. Graz, Ausztria.</span><span data-l="de">Ästhetische Medizin, wo Expertise und Empathie zusammentreffen. Graz, Österreich.</span><span data-l="en">Aesthetic medicine where expertise meets empathy. Graz, Austria.</span></p>
     </div>
     <div>
       <div class="foot-col-title"><span data-l="hu" class="on">Navigáció</span><span data-l="de">Navigation</span><span data-l="en">Navigation</span></div>
@@ -366,12 +466,13 @@ span[data-l].on,a[data-l].on{display:inline}
         <li><a href="#rolam"><span data-l="hu" class="on">Rólam</span><span data-l="de">Über mich</span><span data-l="en">About</span></a></li>
         <li><a href="#kezelesek"><span data-l="hu" class="on">Kezelések</span><span data-l="de">Behandlungen</span><span data-l="en">Treatments</span></a></li>
         <li><a href="#kepzesek"><span data-l="hu" class="on">Képzések</span><span data-l="de">Fortbildung</span><span data-l="en">Education</span></a></li>
+        <li><a href="#velemenyek"><span data-l="hu" class="on">Vélemények</span><span data-l="de">Bewertungen</span><span data-l="en">Reviews</span></a></li>
       </ul>
     </div>
     <div>
       <div class="foot-col-title"><span data-l="hu" class="on">Időpontfoglalás</span><span data-l="de">Termin</span><span data-l="en">Booking</span></div>
       <ul class="foot-links">
-        <li><a href="https://www.schoenheit2go.at/terminkalender-drkovacs/" target="_blank">Schönheit2go Wien</a></li>
+        <li><a href="https://www.schoenheit2go.at/terminkalender-drkovacs/" target="_blank">Schönheit2go</a></li>
       </ul>
     </div>
   </div>
