@@ -297,6 +297,7 @@ span[data-l].on,a[data-l].on{display:inline}
       <li><a href="#rolam" data-l="hu" class="on">Rólam</a><a href="#rolam" data-l="de">Über mich</a><a href="#rolam" data-l="en">About</a></li>
       <li><a href="#kezelesek" data-l="hu" class="on">Kezelések</a><a href="#kezelesek" data-l="de">Behandlungen</a><a href="#kezelesek" data-l="en">Treatments</a></li>
       <li><a href="#kepzesek" data-l="hu" class="on">Képzések</a><a href="#kepzesek" data-l="de">Fortbildung</a><a href="#kepzesek" data-l="en">Education</a></li>
+      <li><a href="wissen.html" data-l="hu" class="on">Tudástár</a><a href="wissen.html" data-l="de">Wissenswertes</a><a href="wissen.html" data-l="en">Knowledge</a></li>
       <li><a href="https://www.schoenheit2go.at/terminkalender-drkovacs/" target="_blank" class="nav-cta" data-l="hu" class="on">Időpontfoglalás</a><a href="https://www.schoenheit2go.at/terminkalender-drkovacs/" target="_blank" class="nav-cta" data-l="de">Termin buchen</a><a href="https://www.schoenheit2go.at/terminkalender-drkovacs/" target="_blank" class="nav-cta" data-l="en">Book Now</a></li>
     </ul>
     <div class="lang-sw">
@@ -531,6 +532,7 @@ span[data-l].on,a[data-l].on{display:inline}
         <li><a href="#kezelesek"><span data-l="hu" class="on">Kezelések</span><span data-l="de">Behandlungen</span><span data-l="en">Treatments</span></a></li>
         <li><a href="#kepzesek"><span data-l="hu" class="on">Képzések</span><span data-l="de">Fortbildung</span><span data-l="en">Education</span></a></li>
         <li><a href="#velemenyek"><span data-l="hu" class="on">Vélemények</span><span data-l="de">Bewertungen</span><span data-l="en">Reviews</span></a></li>
+        <li><a href="wissen.html"><span data-l="hu" class="on">Tudástár</span><span data-l="de">Wissenswertes</span><span data-l="en">Knowledge</span></a></li>
       </ul>
     </div>
     <div>
@@ -577,8 +579,11 @@ function setLang(lang){
   document.querySelectorAll('[data-l]').forEach(el=>el.classList.toggle('on',el.getAttribute('data-l')===lang));
   document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('active',b.textContent.toLowerCase()===lang));
   document.documentElement.lang=lang;
+  try{localStorage.setItem('lang',lang)}catch(e){}
 }
-setLang('hu');
+let initLang='hu';
+try{const s=localStorage.getItem('lang');if(s)initLang=s}catch(e){}
+setLang(initLang);
 </script>
 </body>
 </html>
