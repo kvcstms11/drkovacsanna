@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://drkovacsanna.at/sitemap.xml
+Sitemap: https://drannakovacs.at/sitemap.xml
