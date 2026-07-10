@@ -158,10 +158,10 @@ nav.scrolled{padding:13px 56px}
 /* TESTIMONIALS */
 .testi{padding:100px 0 108px;background:var(--white);overflow:hidden}
 .testi-head{text-align:center;margin-bottom:56px;padding:0 56px}
-.testi-track{display:flex;gap:20px;padding:0 56px 20px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--blush) transparent}
+.testi-track{display:flex;gap:20px;padding:0 56px 20px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--blush) transparent}
 .testi-track::-webkit-scrollbar{height:5px}
 .testi-track::-webkit-scrollbar-thumb{background:var(--blush);border-radius:3px}
-.testi-card{flex:0 0 340px;scroll-snap-align:start;background:var(--cream);padding:36px 32px;border-radius:2px;display:flex;flex-direction:column;border:1px solid rgba(205,143,130,.12);transition:border-color .3s}
+.testi-card{flex:0 0 340px;background:var(--cream);padding:36px 32px;border-radius:2px;display:flex;flex-direction:column;border:1px solid rgba(205,143,130,.12);transition:border-color .3s}
 .testi-card:hover{border-color:rgba(205,143,130,.4)}
 .testi-stars{color:var(--rose);font-size:.8rem;letter-spacing:3px;margin-bottom:18px}
 .testi-text{font-family:var(--hd);font-size:1.02rem;font-weight:300;font-style:italic;line-height:1.6;margin-bottom:22px;flex:1}
@@ -555,7 +555,7 @@ const track = document.querySelector('.testi-track');
 if (track) {
   let paused = false;
   let dir = 1;
-  let pos = 0;
+  let pos = track.scrollLeft;
   ['mouseenter','touchstart','pointerdown','wheel'].forEach(ev =>
     track.addEventListener(ev, () => { paused = true; pos = track.scrollLeft; }, {passive:true}));
   ['mouseleave','touchend'].forEach(ev =>
