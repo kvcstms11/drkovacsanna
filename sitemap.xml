@@ -1,184 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://drannakovacs.at/</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-botox.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-botox.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-botox.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-botox.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-lippen.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-lippen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-lippen.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-lippen.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-konsultation.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-konsultation.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-konsultation.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-konsultation.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-mythen.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-mythen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-mythen.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-mythen.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-nachsorge.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-nachsorge.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-nachsorge.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-nachsorge.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-gesichtsfiller.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-gesichtsfiller.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-gesichtsfiller.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-gesichtsfiller.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-skinbooster.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-skinbooster.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-skinbooster.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-skinbooster.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-microneedling.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-microneedling.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-microneedling.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-microneedling.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-prp.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-prp.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-prp.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-prp.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-mesotherapie.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-mesotherapie.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-mesotherapie.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-mesotherapie.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-pdo.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-pdo.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-pdo.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-pdo.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-biostimulatoren.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-biostimulatoren.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-biostimulatoren.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-biostimulatoren.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-schmerzen.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-schmerzen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-schmerzen.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-schmerzen.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-sicherheit.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-sicherheit.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-sicherheit.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-sicherheit.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-schwangerschaft.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-schwangerschaft.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-schwangerschaft.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-schwangerschaft.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-wann-beginnen.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-wann-beginnen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-wann-beginnen.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-wann-beginnen.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-arztwahl.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-arztwahl.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-arztwahl.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-arztwahl.html"/>
-  </url>
-  <url>
-    <loc>https://drannakovacs.at/wissen-kombination.html</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://drannakovacs.at/wissen-kombination.html"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://drannakovacs.at/wissen-kombination.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drannakovacs.at/wissen-kombination.html"/>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://drannakovacs.at/</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/biostimulatoren-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/botox-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/datenschutz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/fadenlifting-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/hyaluron-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/impressum.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/lippen-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/mesotherapie-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/microneedling-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/preisliste.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/prp-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/skinbooster-graz.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-arztwahl.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-biostimulatoren.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-botox.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-gesichtsfiller.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-kombination.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-konsultation.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-lippen.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-mesotherapie.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-microneedling.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-mythen.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-nachsorge.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-pdo.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-prp.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-schmerzen.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-schwangerschaft.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-sicherheit.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-skinbooster.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen-wann-beginnen.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/wissen.html</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/hu/</loc><lastmod>2026-07-19</lastmod></url>
+  <url><loc>https://drannakovacs.at/en/</loc><lastmod>2026-07-19</lastmod></url>
 </urlset>
