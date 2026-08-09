@@ -89,7 +89,7 @@ a.lb{text-decoration:none;display:inline-block}
 
 /* ABOUT (below CTA, editorial style) */
 .about{background:var(--white);padding:108px 56px}
-.about-inner{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;max-width:1200px;margin:0 auto}
+.about-inner{display:grid;grid-template-columns:.8fr 2fr;gap:72px;align-items:center;max-width:1200px;margin:0 auto}
 .about-left{}
 .about-right p+p{margin-top:18px}
 .about-divider{width:36px;height:1px;background:var(--rose);margin:32px 0 28px}
@@ -318,7 +318,7 @@ span[data-l].on,a[data-l].on{display:inline}
 .faq-outer{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;
   max-width:1240px;margin:0 auto}
 .faq-photo{width:100%;max-width:400px;aspect-ratio:1;border-radius:50%;object-fit:cover;
-  object-position:center 22%;background:var(--blush);display:block;margin:0 auto}
+  object-position:center center;background:var(--blush);display:block;margin:0 auto}
 .faq-list{border-top:1px solid rgba(205,143,130,.3);margin-top:28px}
 .faq-list details{border-bottom:1px solid rgba(205,143,130,.3);padding:20px 0}
 .faq-list summary{cursor:pointer;list-style:none;font-size:1rem;font-weight:400;
@@ -348,19 +348,17 @@ span[data-l].on,a[data-l].on{display:inline}
 }
 
 .about-left{position:relative}
-.ap-main{width:100%;display:block;border-radius:280px 280px 6px 6px;object-fit:cover;
-  aspect-ratio:3/4;background:var(--blush)}
-.ap-detail{position:absolute;right:-46px;bottom:-52px;width:46%;border-radius:6px;
-  border:8px solid var(--white);object-fit:cover;aspect-ratio:3/4;display:block;
-  box-shadow:0 18px 46px rgba(5,9,9,.1)}
+.ap-main{width:100%;height:clamp(400px,44vw,560px);display:block;object-fit:cover;
+  object-position:center 10%;border-radius:210px 210px 4px 4px;background:var(--blush)}
+
 @media(max-width:900px){
   .about-inner{grid-template-columns:1fr;gap:64px}
-  .about-left{max-width:420px;margin:0 auto}
-  .ap-detail{right:-14px;bottom:-30px;width:42%;border-width:6px}
+  .about-left{max-width:330px;margin:0 auto}
+  .ap-main{height:auto;aspect-ratio:3/4}
 }
 .edu-outer{grid-template-columns:1fr 1.6fr .85fr}
-.edu-photo{width:100%;display:block;object-fit:cover;aspect-ratio:3/4;border-radius:6px;
-  background:var(--blush);position:sticky;top:110px}
+.edu-photo{width:100%;display:block;object-fit:cover;aspect-ratio:3/4;
+  mix-blend-mode:multiply;position:sticky;top:110px}
 @media(max-width:1000px){
   .edu-outer{grid-template-columns:1fr}
   .edu-photo{max-width:340px;margin:0 auto;position:static}
@@ -414,7 +412,7 @@ Termin buchen
 <!-- ABOUT -->
 <section class="about" id="ueber-mich">
 <div class="about-inner">
-<div class="about-left"><img alt="Dr. Anna Kovács, Ärztin für Allgemeinmedizin in Graz" class="ap-main" height="1200" loading="lazy" src="anna-portrait.webp" width="900"/><img alt="Vorbereitete Injektion in der Ordination" class="ap-detail" height="880" loading="lazy" src="anna-detail.webp" width="660"/></div>
+<div class="about-left"><img alt="Dr. Anna Kovács, Ärztin für Allgemeinmedizin in Graz" class="ap-main" height="1200" loading="lazy" src="anna-portrait.webp" width="900"/></div>
 <div class="about-right"><p class="body-t r">Mein Name ist Dr. Anna Kovács, und ich bin Ärztin für Allgemeinmedizin mit einer großen Leidenschaft für ästhetische Behandlungen. Für mich bedeutet Ästhetik weit mehr als ein schönes äußeres Erscheinungsbild — es geht darum, die natürliche Ausstrahlung eines Menschen zu bewahren und fein zu unterstreichen.</p><p class="body-t r d1">In meiner Arbeit verbinde ich medizinische Expertise mit einem individuellen, einfühlsamen Ansatz. Durch meine zahlreichen Weiterbildungen im In- und Ausland konnte ich mein Wissen kontinuierlich vertiefen und erweitern.</p><p class="body-t r d2">Mir ist wichtig, jede Patientin und jeden Patienten persönlich wahrzunehmen, sorgfältig zu beraten und Behandlungen so zu gestalten, dass sie harmonisch, elegant und authentisch wirken. Mein Ziel sind natürliche Ergebnisse, die nicht verändern, sondern die eigene Schönheit sanft hervorheben und das Wohlbefinden nachhaltig stärken.</p></div>
 </div>
 </section>
@@ -552,11 +550,11 @@ American Academy of Aesthetic Medicine</div></div>
 <div class="edu-item"><span class="edu-dot"></span>American Academy of Aesthetic Medicine</div>
 <div class="edu-item"><span class="edu-dot"></span>ISAC – International Society for Aesthetic Competence</div>
 </div>
-</div><div class="r d2"><img alt="Ärztliche Vorbereitung einer Behandlung" class="edu-photo" height="919" loading="lazy" src="anna-edu.webp" width="700"/></div></div></section>
+</div><div class="r d2"><img alt="Dr. Anna Kovács in ihrer Ordination in Graz" class="edu-photo" height="960" loading="lazy" src="anna-edu.webp" width="720"/></div></div></section>
 <!-- FOOTER -->
 <section class="faqs" id="faq">
 <div class="faq-outer">
-<div class="r"><img alt="Dr. Anna Kovács" class="faq-photo" height="600" loading="lazy" src="anna-faq.webp" width="600"/></div>
+<div class="r"><img alt="Dr. Anna Kovács" class="faq-photo" height="640" loading="lazy" src="anna-faq.webp" width="640"/></div>
 <div class="r d1">
 <p class="eyebrow2">Häufige Fragen</p>
 <h2 class="st">Die häufigsten Fragen<br/><em>auf einen Blick.</em></h2>
