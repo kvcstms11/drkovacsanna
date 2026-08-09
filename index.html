@@ -346,6 +346,25 @@ span[data-l].on,a[data-l].on{display:inline}
   .faq-photo{max-width:230px}
   .faq-list details p{padding-right:0}
 }
+
+.about-left{position:relative}
+.ap-main{width:100%;display:block;border-radius:280px 280px 6px 6px;object-fit:cover;
+  aspect-ratio:3/4;background:var(--blush)}
+.ap-detail{position:absolute;right:-46px;bottom:-52px;width:46%;border-radius:6px;
+  border:8px solid var(--white);object-fit:cover;aspect-ratio:3/4;display:block;
+  box-shadow:0 18px 46px rgba(5,9,9,.1)}
+@media(max-width:900px){
+  .about-inner{grid-template-columns:1fr;gap:64px}
+  .about-left{max-width:420px;margin:0 auto}
+  .ap-detail{right:-14px;bottom:-30px;width:42%;border-width:6px}
+}
+.edu-outer{grid-template-columns:1fr 1.6fr .85fr}
+.edu-photo{width:100%;display:block;object-fit:cover;aspect-ratio:3/4;border-radius:6px;
+  background:var(--blush);position:sticky;top:110px}
+@media(max-width:1000px){
+  .edu-outer{grid-template-columns:1fr}
+  .edu-photo{max-width:340px;margin:0 auto;position:static}
+}
 </style>
 </head>
 <body>
@@ -395,14 +414,7 @@ Termin buchen
 <!-- ABOUT -->
 <section class="about" id="ueber-mich">
 <div class="about-inner">
-<div class="about-left">
-<p class="eyebrow2 r">Über mich</p>
-<h2 class="st r">Medizinische Präzision<br/>in der <em>Ästhetik</em></h2>
-<div class="aaam-pill r d1">
-<span class="aaam-star">★</span>
-<span class="aaam-text">AAAM-Stipendiatin</span>
-</div>
-</div>
+<div class="about-left"><img alt="Dr. Anna Kovács, Ärztin für Allgemeinmedizin in Graz" class="ap-main" height="1200" loading="lazy" src="anna-portrait.webp" width="900"/><img alt="Vorbereitete Injektion in der Ordination" class="ap-detail" height="880" loading="lazy" src="anna-detail.webp" width="660"/></div>
 <div class="about-right"><p class="body-t r">Mein Name ist Dr. Anna Kovács, und ich bin Ärztin für Allgemeinmedizin mit einer großen Leidenschaft für ästhetische Behandlungen. Für mich bedeutet Ästhetik weit mehr als ein schönes äußeres Erscheinungsbild — es geht darum, die natürliche Ausstrahlung eines Menschen zu bewahren und fein zu unterstreichen.</p><p class="body-t r d1">In meiner Arbeit verbinde ich medizinische Expertise mit einem individuellen, einfühlsamen Ansatz. Durch meine zahlreichen Weiterbildungen im In- und Ausland konnte ich mein Wissen kontinuierlich vertiefen und erweitern.</p><p class="body-t r d2">Mir ist wichtig, jede Patientin und jeden Patienten persönlich wahrzunehmen, sorgfältig zu beraten und Behandlungen so zu gestalten, dass sie harmonisch, elegant und authentisch wirken. Mein Ziel sind natürliche Ergebnisse, die nicht verändern, sondern die eigene Schönheit sanft hervorheben und das Wohlbefinden nachhaltig stärken.</p></div>
 </div>
 </section>
@@ -424,6 +436,7 @@ Termin buchen
 </section>
 <!-- PHILOSOPHY -->
 <!-- TESTIMONIALS -->
+<!-- INAKTIV – Bewertungen: bis eigene Google-Bewertungen vorliegen ausgeblendet.
 <section class="testi" id="bewertungen">
 <div class="testi-head">
 <p class="eyebrow2 r">Bewertungen</p>
@@ -504,6 +517,7 @@ Termin buchen
 </div>
 </div>
 </section>
+-->
 <!-- EDUCATION -->
 <section class="edu" id="ausbildung">
 <div class="edu-outer">
@@ -538,11 +552,11 @@ American Academy of Aesthetic Medicine</div></div>
 <div class="edu-item"><span class="edu-dot"></span>American Academy of Aesthetic Medicine</div>
 <div class="edu-item"><span class="edu-dot"></span>ISAC – International Society for Aesthetic Competence</div>
 </div>
-</div></div></section>
+</div><div class="r d2"><img alt="Ärztliche Vorbereitung einer Behandlung" class="edu-photo" height="919" loading="lazy" src="anna-edu.webp" width="700"/></div></div></section>
 <!-- FOOTER -->
 <section class="faqs" id="faq">
 <div class="faq-outer">
-<div class="r"><img alt="Dr. Anna Kovács" class="faq-photo" loading="lazy" src="anna.webp"/></div>
+<div class="r"><img alt="Dr. Anna Kovács" class="faq-photo" height="600" loading="lazy" src="anna-faq.webp" width="600"/></div>
 <div class="r d1">
 <p class="eyebrow2">Häufige Fragen</p>
 <h2 class="st">Die häufigsten Fragen<br/><em>auf einen Blick.</em></h2>
@@ -564,7 +578,6 @@ American Academy of Aesthetic Medicine</div></div>
 <li><a href="#ueber-mich">Über mich</a></li>
 <li><a href="#behandlungen">Behandlungen</a></li>
 <li><a href="#ausbildung">Fortbildung</a></li>
-<li><a href="#bewertungen">Bewertungen</a></li>
 <li><a href="wissen.html">Wissenswertes</a></li>
 </ul>
 </div>
