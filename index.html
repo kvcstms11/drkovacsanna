@@ -357,11 +357,47 @@ span[data-l].on,a[data-l].on{display:inline}
   .ap-main{height:auto;aspect-ratio:3/4}
 }
 .edu-outer{grid-template-columns:1fr 1.6fr .85fr}
-.edu-photo{width:100%;display:block;object-fit:cover;aspect-ratio:3/4;
-  mix-blend-mode:multiply;position:sticky;top:110px}
+.edu-photo{width:100%;display:block;object-fit:contain;aspect-ratio:2/3;
+  position:sticky;top:96px;margin-top:-90px;filter:blur(2.2px);opacity:.9;
+  pointer-events:none}
 @media(max-width:1000px){
   .edu-outer{grid-template-columns:1fr}
-  .edu-photo{max-width:340px;margin:0 auto;position:static}
+  .edu-photo{max-width:300px;margin:0 auto;position:static;margin-top:0;
+    filter:blur(1.4px)}
+}
+
+/* --- kezelési kártyák: kép + finom hover-animáció --- */
+.tc{padding:0;display:flex;flex-direction:column}
+.tc-media{position:relative;overflow:hidden;aspect-ratio:3/2;background:var(--blush)}
+.tc-media img{width:100%;height:100%;object-fit:cover;display:block;
+  transform:scale(1.001);transition:transform 1.1s cubic-bezier(.16,.84,.44,1),
+  filter .6s ease}
+.tc-media::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(205,143,130,.34),rgba(205,143,130,0) 58%);
+  opacity:0;transition:opacity .55s ease}
+.tc-body{padding:28px 30px 32px;display:flex;flex-direction:column;flex:1}
+.tc-num{position:absolute;top:16px;left:20px;z-index:2;margin:0;font-size:1.9rem;
+  color:var(--white);opacity:.75;text-shadow:0 1px 12px rgba(5,9,9,.25)}
+.tc-more{margin-top:auto;padding-top:16px;align-self:flex-start}
+.tc-more span{display:inline-block;transition:transform .45s cubic-bezier(.16,.84,.44,1)}
+.tc:hover .tc-media img{transform:scale(1.07);filter:saturate(1.05)}
+.tc:hover .tc-media::after{opacity:1}
+.tc:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(5,9,9,.09)}
+.tc{transition:transform .55s cubic-bezier(.16,.84,.44,1),box-shadow .55s ease}
+.tc:hover .tc-more{color:var(--navy);border-color:var(--navy)}
+.tc:hover .tc-more span{transform:translateX(7px)}
+@media(max-width:768px){.tc-body{padding:22px 22px 26px}}
+@media(prefers-reduced-motion:reduce){
+  .tc,.tc-media img,.tc-media::after,.tc-more span{transition:none}
+  .tc:hover{transform:none}
+  .tc:hover .tc-media img{transform:none}
+}
+/* --- portrék: nagyon visszafogott mozgás --- */
+.ap-main,.faq-photo{transition:transform 1.4s cubic-bezier(.16,.84,.44,1)}
+.about-left:hover .ap-main,.faq-outer:hover .faq-photo{transform:scale(1.022)}
+@media(prefers-reduced-motion:reduce){
+  .ap-main,.faq-photo{transition:none}
+  .about-left:hover .ap-main,.faq-outer:hover .faq-photo{transform:none}
 }
 </style>
 </head>
@@ -423,14 +459,14 @@ Termin buchen
 <h2 class="st r">Behandlungen im <em>Überblick</em></h2>
 </div>
 <div class="t-grid">
-<div class="tc r"><div class="tc-num">01</div><div class="tc-name">Botox / Muskelrelaxans</div><p class="tc-desc">Behandlung mimischer Falten mit Botulinumtoxin. Natürliches, frisches Erscheinungsbild mit sofort sichtbarem Ergebnis.</p><a class="tc-more" href="botox-graz.html">Mehr erfahren →</a></div>
-<div class="tc r d1"><div class="tc-num">02</div><div class="tc-name">Hyaluronsäure-Filler</div><p class="tc-desc">Wiederherstellung von Lippen- und Gesichtsvolumen. Gesichtsharmonisierung nach individueller Analyse.</p><a class="tc-more" href="hyaluron-graz.html">Mehr erfahren →</a></div>
-<div class="tc r d2"><div class="tc-num">03</div><div class="tc-name">Microneedling</div><p class="tc-desc">Anregung der natürlichen Hautregeneration. Feinere Textur, gleichmäßigerer Teint.</p><a class="tc-more" href="microneedling-graz.html">Mehr erfahren →</a></div>
-<div class="tc r d3"><div class="tc-num">04</div><div class="tc-name">Plasma Lifting (PRP)</div><p class="tc-desc">Wachstumsfaktoren aus eigenem Blut zur Hautzellregeneration. Vollkommen natürliche Methode.</p><a class="tc-more" href="prp-graz.html">Mehr erfahren →</a></div>
-<div class="tc r"><div class="tc-num">05</div><div class="tc-name">Mesotherapie</div><p class="tc-desc">Direkte Einbringung von Nährstoffen in die Haut. Intensive Hydratisierung und Verjüngung.</p><a class="tc-more" href="mesotherapie-graz.html">Mehr erfahren →</a></div>
-<div class="tc r d2"><div class="tc-num">07</div><div class="tc-name">Biostimulatoren</div><p class="tc-desc">Kollagenstimulation mit hyperdiluted Radiesse und Sculptra.</p><a class="tc-more" href="biostimulatoren-graz.html">Mehr erfahren →</a></div>
-<div class="tc r d3"><div class="tc-num">08</div><div class="tc-name">Hautqualität-Behandlungen</div><p class="tc-desc">Skinbooster und Profhilo zur Tiefenhydratisierung und Strukturverbesserung der Haut.</p><a class="tc-more" href="skinbooster-graz.html">Mehr erfahren →</a></div>
-<div class="tc r"><div class="tc-num">09</div><div class="tc-name">Skin Specials</div><p class="tc-desc">Kombinationsbehandlungen für mehrschichtige Anliegen: chemisches Peeling, Microneedling, Wirkstoffe und Injektionen in einem abgestimmten Ablauf – für Haut, die mehr als eine Antwort braucht.</p><a class="tc-more" href="skin-specials-graz.html">Mehr erfahren →</a></div></div>
+<div class="tc r"><div class="tc-media"><img alt="Botox-Behandlung – Faltenbehandlung mit Botulinumtoxin in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">01</div><div class="tc-body"><div class="tc-name">Botox / Muskelrelaxans</div><p class="tc-desc">Behandlung mimischer Falten mit Botulinumtoxin. Natürliches, frisches Erscheinungsbild mit sofort sichtbarem Ergebnis.</p><a class="tc-more" href="botox-graz.html">Mehr erfahren <span>→</span></a></div></div>
+<div class="tc r d1"><div class="tc-media"><img alt="Hyaluronsäure-Filler – Gesichtsharmonisierung in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">02</div><div class="tc-body"><div class="tc-name">Hyaluronsäure-Filler</div><p class="tc-desc">Wiederherstellung von Lippen- und Gesichtsvolumen. Gesichtsharmonisierung nach individueller Analyse.</p><a class="tc-more" href="hyaluron-graz.html">Mehr erfahren <span>→</span></a></div></div>
+<div class="tc r d2"><div class="tc-media"><img alt="Microneedling – Verbesserung des Hautbildes in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">03</div><div class="tc-body"><div class="tc-name">Microneedling</div><p class="tc-desc">Anregung der natürlichen Hautregeneration. Feinere Textur, gleichmäßigerer Teint.</p><a class="tc-more" href="microneedling-graz.html">Mehr erfahren <span>→</span></a></div></div>
+<div class="tc r d3"><div class="tc-media"><img alt="PRP-Behandlung – Regeneration mit Eigenplasma in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">04</div><div class="tc-body"><div class="tc-name">Plasma Lifting (PRP)</div><p class="tc-desc">Wachstumsfaktoren aus eigenem Blut zur Hautzellregeneration. Vollkommen natürliche Methode.</p><a class="tc-more" href="prp-graz.html">Mehr erfahren <span>→</span></a></div></div>
+<div class="tc r"><div class="tc-media"><img alt="Mesotherapie – Wirkstoffe für die Haut in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">05</div><div class="tc-body"><div class="tc-name">Mesotherapie</div><p class="tc-desc">Direkte Einbringung von Nährstoffen in die Haut. Intensive Hydratisierung und Verjüngung.</p><a class="tc-more" href="mesotherapie-graz.html">Mehr erfahren <span>→</span></a></div></div>
+<div class="tc r d2"><div class="tc-media"><img alt="Skinbooster – Tiefenhydratation der Haut in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">06</div><div class="tc-body"><div class="tc-name">Biostimulatoren</div><p class="tc-desc">Kollagenstimulation mit hyperdiluted Radiesse und Sculptra.</p><a class="tc-more" href="biostimulatoren-graz.html">Mehr erfahren <span>→</span></a></div></div>
+<div class="tc r d3"><div class="tc-media"><img alt="Polynukleotide – Hautregeneration in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">07</div><div class="tc-body"><div class="tc-name">Hautqualität-Behandlungen</div><p class="tc-desc">Skinbooster und Profhilo zur Tiefenhydratisierung und Strukturverbesserung der Haut.</p><a class="tc-more" href="skinbooster-graz.html">Mehr erfahren <span>→</span></a></div></div>
+<div class="tc r"><div class="tc-media"><img alt="Skin Specials – Kombinationsbehandlungen in Graz" height="480" loading="lazy" src="treatment-placeholder.webp" width="720"/></div><div class="tc-num">08</div><div class="tc-body"><div class="tc-name">Skin Specials</div><p class="tc-desc">Kombinationsbehandlungen für mehrschichtige Anliegen: chemisches Peeling, Microneedling, Wirkstoffe und Injektionen in einem abgestimmten Ablauf – für Haut, die mehr als eine Antwort braucht.</p><a class="tc-more" href="skin-specials-graz.html">Mehr erfahren <span>→</span></a></div></div></div>
 </section>
 <!-- PHILOSOPHY -->
 <!-- TESTIMONIALS -->
@@ -550,7 +586,7 @@ American Academy of Aesthetic Medicine</div></div>
 <div class="edu-item"><span class="edu-dot"></span>American Academy of Aesthetic Medicine</div>
 <div class="edu-item"><span class="edu-dot"></span>ISAC – International Society for Aesthetic Competence</div>
 </div>
-</div><div class="r d2"><img alt="Dr. Anna Kovács in ihrer Ordination in Graz" class="edu-photo" height="960" loading="lazy" src="anna-edu.webp" width="720"/></div></div></section>
+</div><div class="r d2"><img alt="Dr. Anna Kovács in ihrer Ordination in Graz" class="edu-photo" height="1139" loading="lazy" src="anna-edu.webp" width="760"/></div></div></section>
 <!-- FOOTER -->
 <section class="faqs" id="faq">
 <div class="faq-outer">
