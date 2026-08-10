@@ -103,7 +103,8 @@ a.lb{text-decoration:none;display:inline-block}
 /* TREATMENTS */
 .treatments{padding:108px 56px;background:var(--cream)}
 .t-header{text-align:center;margin-bottom:64px}
-.t-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.t-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+  max-width:1340px;margin:0 auto}
 .tc{background:var(--white);padding:40px 32px;position:relative;overflow:hidden;transition:transform .3s}
 .tc:hover{transform:translateY(-3px)}
 .tc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--rose);transform:scaleX(0);transform-origin:left;transition:transform .4s}
@@ -207,7 +208,7 @@ span[data-l].on,a[data-l].on{display:inline}
 
   /* TREATMENTS */
   .treatments{padding:64px 24px}
-  .t-grid{grid-template-columns:1fr 1fr}
+  .t-grid{grid-template-columns:1fr 1fr;gap:16px}
 
   /* PHILOSOPHY */
   .phil{padding:72px 24px}
@@ -233,7 +234,7 @@ span[data-l].on,a[data-l].on{display:inline}
 }
 
 @media(max-width:480px){
-  .t-grid{grid-template-columns:1fr}
+  .t-grid{grid-template-columns:1fr;gap:16px}
   .tc{padding:32px 24px}
   .hero-photo{height:75vw}
   .hero-left{padding:40px 20px 28px}
@@ -356,14 +357,10 @@ span[data-l].on,a[data-l].on{display:inline}
   .about-left{max-width:330px;margin:0 auto}
   .ap-main{max-width:300px}
 }
-.edu-outer{grid-template-columns:1fr 1.7fr .8fr;gap:52px;position:relative}
+.edu-outer{grid-template-columns:1fr 2fr;gap:64px;position:relative}
 .edu-outer > .r.d1{position:relative;z-index:1}
-.edu-photo{width:120%;max-width:none;height:clamp(430px,46vw,600px);display:block;
-  object-fit:contain;object-position:center top;position:sticky;top:80px;
-  margin:-92px 0 0 -20%;pointer-events:none;z-index:0}
 @media(max-width:1000px){
   .edu-outer{grid-template-columns:1fr}
-  .edu-photo{max-width:260px;height:auto;margin:0 auto;position:static;margin-top:0}
 }
 
 /* --- kezelési kártyák: kép + finom hover-animáció --- */
@@ -556,7 +553,7 @@ Termin buchen
 <section class="edu" id="ausbildung">
 <div class="edu-outer">
 <div class="edu-left r">
-<h2 class="edu-giant">Mein Weg in die<br/><em>Medizin</em></h2>
+<h2 class="edu-giant">Mein Weg<br/>in die<br/><em>Medizin</em></h2>
 <p class="edu-subtitle">Medizinische Ausbildung in Wien und Szeged, laufende Spezialisierung
 auf ästhetische Behandlungen.</p>
 <div class="edu-divider"></div>
@@ -586,7 +583,7 @@ American Academy of Aesthetic Medicine</div></div>
 <div class="edu-item"><span class="edu-dot"></span>American Academy of Aesthetic Medicine</div>
 <div class="edu-item"><span class="edu-dot"></span>ISAC – International Society for Aesthetic Competence</div>
 </div>
-</div><div class="r d2"><img alt="Dr. Anna Kovács in ihrer Ordination in Graz" class="edu-photo" height="1139" loading="lazy" src="anna-edu.webp" width="760"/></div></div></section>
+</div></div></section>
 <!-- FOOTER -->
 <section class="faqs" id="faq">
 <div class="faq-outer">
