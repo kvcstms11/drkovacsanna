@@ -315,10 +315,10 @@ span[data-l].on,a[data-l].on{display:inline}
 .edu-all:hover{color:var(--navy);border-color:var(--navy)}
 
 .faqs{background:var(--cream);padding:104px 56px}
-.faq-outer{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;
+.faq-outer{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center;
   max-width:1240px;margin:0 auto}
-.faq-photo{width:100%;max-width:400px;aspect-ratio:1;border-radius:50%;object-fit:cover;
-  object-position:center center;background:var(--blush);display:block;margin:0 auto}
+.faq-photo{width:100%;max-width:min(420px,100%);aspect-ratio:1;border-radius:50%;
+  object-fit:contain;background:var(--blush);display:block;margin:0 auto}
 .faq-list{border-top:1px solid rgba(205,143,130,.3);margin-top:28px}
 .faq-list details{border-bottom:1px solid rgba(205,143,130,.3);padding:20px 0}
 .faq-list summary{cursor:pointer;list-style:none;font-size:1rem;font-weight:400;
@@ -590,7 +590,7 @@ American Academy of Aesthetic Medicine</div></div>
 <!-- FOOTER -->
 <section class="faqs" id="faq">
 <div class="faq-outer">
-<div class="r"><img alt="Dr. Anna Kovács" class="faq-photo" height="640" loading="lazy" src="anna-faq.webp" width="640"/></div>
+<div class="r"><img alt="Dr. Anna Kovács, Ärztin für Allgemeinmedizin in Graz" class="faq-photo" height="820" loading="lazy" src="anna-faq.webp" width="820"/></div>
 <div class="r d1">
 <p class="eyebrow2">Häufige Fragen</p>
 <h2 class="st">Die häufigsten Fragen<br/><em>auf einen Blick.</em></h2>
