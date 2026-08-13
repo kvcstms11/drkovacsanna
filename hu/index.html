@@ -141,7 +141,10 @@ a.lb{text-decoration:none;display:inline-block}
 /* TREATMENTS */
 .treatments{padding:108px 56px;background:var(--cream)}
 .t-header{text-align:center;margin-bottom:64px}
-.t-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.t-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;
+  max-width:1340px;margin:0 auto}
+.t-grid .tc{flex:0 1 calc(25% - 17px)}
+@media(max-width:1100px){.t-grid .tc{flex:0 1 calc(33.333% - 15px)}}
 .tc{background:var(--white);padding:40px 32px;position:relative;overflow:hidden;transition:transform .3s}
 .tc:hover{transform:translateY(-3px)}
 .tc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--rose);transform:scaleX(0);transform-origin:left;transition:transform .4s}
@@ -245,7 +248,8 @@ span[data-l].on,a[data-l].on{display:inline}
 
   /* TREATMENTS */
   .treatments{padding:64px 24px}
-  .t-grid{grid-template-columns:1fr 1fr}
+  .t-grid{gap:16px}
+  .t-grid .tc{flex:0 1 calc(50% - 8px)}
 
   /* PHILOSOPHY */
   .phil{padding:72px 24px}
@@ -271,7 +275,8 @@ span[data-l].on,a[data-l].on{display:inline}
 }
 
 @media(max-width:480px){
-  .t-grid{grid-template-columns:1fr}
+  .t-grid{gap:16px}
+  .t-grid .tc{flex:1 1 100%}
   .tc{padding:32px 24px}
   .hero-photo{height:75vw}
   .hero-left{padding:40px 20px 28px}
@@ -480,11 +485,24 @@ a.tc:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
 
 
 
-a.tc{display:flex;flex-direction:column;text-decoration:none;color:inherit;cursor:pointer}
+
 a.tc:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
 .tc .tc-more{margin-top:auto;padding-top:16px;align-self:flex-start;
   display:inline-block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
   color:var(--rose);font-weight:600;border-bottom:1px solid transparent;transition:.3s}
+
+.wayblock{margin-top:26px}
+.way-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(205,143,130,.18);
+  font-size:.95rem;line-height:1.6}
+.way-item:last-child{border-bottom:none}
+.way-item span{color:var(--rose);flex:0 0 auto;font-size:.8rem;padding-top:.25em}
+.cert-h{font-family:var(--hd);font-size:1.35rem;font-weight:400;margin:44px 0 6px}
+.memb-h{font-family:var(--hd);font-size:1.35rem;font-weight:400;margin:40px 0 6px}
+.edu-all{display:inline-block;margin-top:24px;font-size:.68rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--rose);text-decoration:none;font-weight:600;
+  border-bottom:1px solid transparent;transition:.3s}
+.edu-all:hover{color:var(--navy);border-color:var(--navy)}
+
 </style>
 </head>
 <body>
@@ -642,48 +660,27 @@ Célom az idő nyomainak finom csökkentése — hogy az arc frissebbnek, kipihe
 </section>
 -->
 <!-- EDUCATION -->
+
 <section class="edu" id="ausbildung">
 <div class="edu-outer">
 <div class="edu-left r">
-<h2 class="edu-giant">
-Képzések &amp;<br/><em>oklevelek</em>
-</h2>
-<p class="edu-subtitle">
-Bécs, Budapest és a világ vezető esztétikai akadémiáin szerzett legmodernebb ismeretek és technikák.
-
-
-</p>
+<h2 class="edu-giant">Utam az<br/><em>orvoslásig</em></h2>
+<p class="edu-subtitle">Orvosi tanulmányok Bécsben és Szegeden, folyamatos specializáció az esztétikai kezelésekre.</p>
 <div class="edu-divider"></div>
-<div class="edu-deg">Orvosi Tanulmányok</div>
-<div class="edu-sub">Universität Szeged &amp; Medizinische Universität Wien</div>
-<div class="edu-deg">Általános Orvosi Képzés</div>
-<div class="edu-sub">Alsó-Ausztria &amp; Stájerország · Sürgősségi orvosi képzés</div>
 </div>
 <div class="r d1">
+<div class="wayblock"><div class="way-item"><span>—</span><div>Orvosi tanulmányok a bécsi Medizinische Universitäten és a Szegedi Tudományegyetemen</div></div><div class="way-item"><span>—</span><div>Általános orvos, esztétikai kezelésekre specializálódva</div></div><div class="way-item"><span>—</span><div>Rendszeres itthoni és külföldi továbbképzések biztosítják a legmagasabb szakmai színvonalat és a korszerű kezelési módszereket</div></div></div>
+<h3 class="cert-h">Képzések és oklevelek</h3>
 <div class="edu-grid">
-<div class="edu-aaam"><span class="edu-star">★</span><div class="edu-aaam-t"><strong>AAAM 25. Jubileumi Ösztöndíj · Világszerte 3 orvos egyike</strong><br/>American Academy of Aesthetic Medicine</div></div>
-<div class="edu-item"><span class="edu-dot"></span>Diplom Mesotherapie Ästhetik</div>
-<div class="edu-item"><span class="edu-dot"></span>Level 1 Certificate Course in Aesthetic Medicine – American Academy of Aesthetic Medicine</div>
-<div class="edu-item"><span class="edu-dot"></span>Full-face Harmonization with Hyaluronic Acid Following Facial Analysis – Teoxane Academy</div>
-<div class="edu-item"><span class="edu-dot"></span>Fadenlifting Hands-on Training – MdExpert Pharma</div>
-<div class="edu-item"><span class="edu-dot"></span>Skinquality-Polyphil Workshop – Croma</div>
-<div class="edu-item"><span class="edu-dot"></span>Treatment Options for the Temporal Region, Forehead &amp; Outer Eye Corner – Teoxane Academy Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Improvement of Skin Quality &amp; Comprehensive Anatomical Knowledge – Teoxane Academy Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Advanced Botulinum Toxin (Lower Face) Hands-on Training – MdExpert Pharma Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Perioral Region Treatment Options – Teoxane Academy Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Biostimulatoren mit Calciumhydroxylapatit – MdExpert</div>
-<div class="edu-item"><span class="edu-dot"></span>Behandlungstechniken mit Hyaluronsäure – unteres Gesichtsdrittel – Teoxane Academy Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Gesichtsharmonisierung mit Hyaluronsäure – Teoxane Academy Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Filler/Hyaluron Lippen Kurs – Teoxane Academy Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Periorbitale Region Filler Hands-on Training – Teoxane Academy Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Botulinum Toxin Hands-on Training – MdExpert Pharma Budapest</div>
-<div class="edu-item"><span class="edu-dot"></span>Management von Komplikationen nach Filler- &amp; Botulinumtoxin-Injektionen – Teoxane Academy Budapest</div>
+<div class="edu-aaam"><span class="edu-star">★</span><div class="edu-aaam-t">
+<strong>AAAM 25 éves jubileumi ösztöndíj · Világszerte három orvos egyike</strong><br/>American Academy of Aesthetic Medicine</div></div>
+<div class="edu-item"><span class="edu-dot"></span>Mezoterápia esztétikai oklevél</div><div class="edu-item"><span class="edu-dot"></span>ÖÄK ortomolekuláris orvoslás oklevél</div><div class="edu-item"><span class="edu-dot"></span>ÖÄK továbbképzési oklevél</div><div class="edu-item"><span class="edu-dot"></span>Sürgősségi orvosi tanfolyam</div>
 </div>
-</div>
-</div>
-</section>
+<a class="edu-all" href="../fortbildungen.html">Összes képzés és oklevél megtekintése →</a>
+<h3 class="memb-h">Tagságok</h3>
+<div class="edu-grid"><div class="edu-item"><span class="edu-dot"></span>American Academy of Aesthetic Medicine</div><div class="edu-item"><span class="edu-dot"></span>ISAC – International Society for Aesthetic Competence</div></div>
+</div></div></section>
 <!-- FOOTER -->
-
 <section class="faqs" id="faq">
 <div class="faq-outer">
 <div class="r"><img alt="Dr. Anna Kovács" class="faq-photo" height="820" loading="lazy" src="../anna-faq.webp" width="820"/></div>
