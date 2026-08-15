@@ -231,6 +231,21 @@ body.mopen{overflow:hidden}
   backdrop-filter:none}
 .mlang{display:flex;flex-direction:row;gap:8px;margin-top:6px}
 .mlang a{flex:1 1 0;text-align:center}
+
+@media(max-width:900px){
+  .nav-r{gap:12px}
+  .nav-links{display:flex!important;gap:0}
+  .nav-links li{display:none!important}
+  .nav-links li:last-child{display:block!important}
+  .nav-cta{display:inline-block!important;background:var(--rose)!important;
+    color:var(--white)!important;padding:10px 18px;border-radius:2px;font-size:.56rem;
+    letter-spacing:.12em;white-space:nowrap}
+  .nav-back{display:none}
+}
+@media(max-width:400px){
+  .nav-cta{padding:9px 13px;font-size:.5rem;letter-spacing:.07em}
+  .nav-r{gap:8px}
+}
 </style>
 </head>
 <body><!-- Google Tag Manager (noscript) -->
