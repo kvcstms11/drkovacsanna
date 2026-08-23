@@ -297,6 +297,18 @@ body.mopen{overflow:hidden}
   color:rgba(254,245,241,.22);margin-top:8px;letter-spacing:.02em}
 .foot-credit a{color:rgba(254,245,241,.34);text-decoration:none;transition:color .25s}
 .foot-credit a:hover{color:var(--rose)}
+
+.nav-logo{margin-right:40px}
+@media(max-width:900px){.nav-logo{margin-right:16px}}
+
+figure.tfig img,figure.zones img{cursor:zoom-in}
+.lbox{position:fixed;inset:0;z-index:3000;background:rgba(5,9,9,.88);display:none;
+  align-items:center;justify-content:center;padding:28px}
+.lbox.open{display:flex}
+.lbox img{max-width:100%;max-height:92vh;display:block;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.lbox-close{position:absolute;top:18px;right:24px;background:none;border:none;color:#fff;
+  font-size:2rem;line-height:1;cursor:pointer;opacity:.75}
+.lbox-close:hover{opacity:1}
 </style>
 </head>
 <body><!-- Google Tag Manager (noscript) -->
@@ -331,7 +343,7 @@ body.mopen{overflow:hidden}
 <h2>Kosten</h2><div class="price-inline"><div class="pl-row"><div class="pl-name">1 ml</div><div class="pl-dots"></div><div class="pl-price">€ 350,–</div></div><div class="pl-row"><div class="pl-name">2 ml</div><div class="pl-dots"></div><div class="pl-price">€ 600,–</div></div><div class="pl-row"><div class="pl-name">3 ml</div><div class="pl-dots"></div><div class="pl-price">€ 830,–</div></div><div class="pl-row"><div class="pl-name">4 ml</div><div class="pl-dots"></div><div class="pl-price">€ 1.050,–</div></div></div><p>Alle Preise inklusive gesetzlicher Abgaben. Der genaue Aufwand wird im ärztlichen Beratungsgespräch (€ 70,–) besprochen.</p>
 <!-- TODO: konkrét ár/ártartomány Anna kérdőíve alapján -->
 <h2>Behandlungsort</h2>
-<p>Die Behandlung findet in meiner Ordination in Graz statt. Die genaue Adresse und die Ordinationszeiten werden in Kürze bekannt gegeben.</p>
+<p>Die Behandlung findet in meiner Ordination in Graz statt: Andritzer Reichsstraße 44, 8045 Graz. Termine nach Vereinbarung.</p>
 <!-- TODO: pontos cím + rendelési idő -->
 <h2>Ihre Ärztin</h2>
 <p>Dr. Anna Kovács ist Wahlärztin für Allgemeinmedizin und führt eine Ordination für ästhetische Behandlungen in Graz. Sie bildet sich laufend im In- und Ausland fort und ist eine von drei Empfängerinnen weltweit des 25-Jahre-Jubiläumsstipendiums der American Academy of Aesthetic Medicine.</p>
@@ -377,6 +389,23 @@ body.mopen{overflow:hidden}
   s.addEventListener('click',close);
   var c=document.getElementById('mClose'); if(c)c.addEventListener('click',close);
   d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+
+<script>
+(function(){
+  var imgs=document.querySelectorAll('figure.tfig img,figure.zones img');
+  if(!imgs.length) return;
+  var b=document.createElement('div');b.className='lbox';
+  b.innerHTML='<button class="lbox-close" type="button" aria-label="Schließen">&times;</button><img alt="">';
+  document.body.appendChild(b);
+  var big=b.querySelector('img');
+  function close(){b.classList.remove('open');document.body.style.overflow='';}
+  imgs.forEach(function(i){i.addEventListener('click',function(){
+    big.src=i.currentSrc||i.src;big.alt=i.alt||'';
+    b.classList.add('open');document.body.style.overflow='hidden';});});
+  b.addEventListener('click',close);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
 </script>

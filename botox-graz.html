@@ -297,6 +297,30 @@ body.mopen{overflow:hidden}
   color:rgba(254,245,241,.22);margin-top:8px;letter-spacing:.02em}
 .foot-credit a{color:rgba(254,245,241,.34);text-decoration:none;transition:color .25s}
 .foot-credit a:hover{color:var(--rose)}
+
+.nav-logo{margin-right:40px}
+@media(max-width:900px){.nav-logo{margin-right:16px}}
+
+figure.tfig img,figure.zones img{cursor:zoom-in}
+.lbox{position:fixed;inset:0;z-index:3000;background:rgba(5,9,9,.88);display:none;
+  align-items:center;justify-content:center;padding:28px}
+.lbox.open{display:flex}
+.lbox img{max-width:100%;max-height:92vh;display:block;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.lbox-close{position:absolute;top:18px;right:24px;background:none;border:none;color:#fff;
+  font-size:2rem;line-height:1;cursor:pointer;opacity:.75}
+.lbox-close:hover{opacity:1}
+
+.medblock{margin:38px 0 8px;border-top:1px solid rgba(205,143,130,.3);padding-top:26px}
+.medblock h2{margin-bottom:6px}
+.medblock .mb-lead{font-size:.93rem;line-height:1.85;opacity:.8;margin-bottom:18px}
+.mb-list{display:grid;gap:1px;background:rgba(205,143,130,.22);
+  border-top:1px solid rgba(205,143,130,.22);border-bottom:1px solid rgba(205,143,130,.22)}
+.mb-list a{display:block;background:var(--cream);padding:16px 4px;text-decoration:none;
+  color:var(--ink);transition:padding-left .25s,background .25s}
+.mb-list a:hover{padding-left:10px;background:var(--blush)}
+.mb-list b{display:block;font-family:var(--hd);font-size:1.08rem;font-weight:500;
+  margin-bottom:3px}
+.mb-list span{font-size:.86rem;opacity:.75;line-height:1.7}
 </style>
 </head>
 <body><!-- Google Tag Manager (noscript) -->
@@ -329,13 +353,13 @@ body.mopen{overflow:hidden}
 <h2>Kosten</h2><div class="price-inline"><div class="pl-row"><div class="pl-name">1 Zone<em>Stirn, Zornesfalte oder Krähenfüße</em></div><div class="pl-dots"></div><div class="pl-price">€ 190,–</div></div><div class="pl-row"><div class="pl-name">2 Zonen</div><div class="pl-dots"></div><div class="pl-price">€ 290,–</div></div><div class="pl-row"><div class="pl-name">3 Zonen</div><div class="pl-dots"></div><div class="pl-price">€ 390,–</div></div><div class="pl-row"><div class="pl-name">Kleine Zonen<em>Gummy Smile, Lipflip, Plisseefalten, DAO/Mundwinkel, Erdbeerkinn, Nasenspitze, Bunny Lines</em></div><div class="pl-dots"></div><div class="pl-price">€ 120,–</div></div><div class="pl-row"><div class="pl-name">Halsbotox / Nefertiti Lift</div><div class="pl-dots"></div><div class="pl-price">€ 350,–</div></div><div class="pl-row"><div class="pl-name">Masseter Botox / Facial Slimming<em>bei Zähneknirschen (Bruxismus)</em></div><div class="pl-dots"></div><div class="pl-price">€ 350,–</div></div><div class="pl-row"><div class="pl-name">Botox gegen Achselschweiß</div><div class="pl-dots"></div><div class="pl-price">ab € 500,–</div></div><div class="pl-row"><div class="pl-name">Botox gegen Schweißhände</div><div class="pl-dots"></div><div class="pl-price">ab € 500,–</div></div><div class="pl-row"><div class="pl-name">Traptox</div><div class="pl-dots"></div><div class="pl-price">ab € 500,–</div></div><div class="pl-row"><div class="pl-name">Migränebotox</div><div class="pl-dots"></div><div class="pl-price">ab € 390,–</div></div></div><p>Alle Preise inklusive gesetzlicher Abgaben. Der genaue Aufwand wird im ärztlichen Beratungsgespräch (€ 70,–) besprochen.</p>
 <!-- TODO: konkrét ár/ártartomány Anna kérdőíve alapján -->
 <h2>Behandlungsort</h2>
-<p>Die Behandlung findet in meiner Ordination in Graz statt. Die genaue Adresse und die Ordinationszeiten werden in Kürze bekannt gegeben.</p>
+<p>Die Behandlung findet in meiner Ordination in Graz statt: Andritzer Reichsstraße 44, 8045 Graz. Termine nach Vereinbarung.</p>
 <!-- TODO: pontos cím + rendelési idő -->
 <h2>Ihre Ärztin</h2>
 <p>Dr. Anna Kovács ist Wahlärztin für Allgemeinmedizin und führt eine Ordination für ästhetische Behandlungen in Graz. Sie bildet sich laufend im In- und Ausland fort und ist eine von drei Empfängerinnen weltweit des 25-Jahre-Jubiläumsstipendiums der American Academy of Aesthetic Medicine.</p>
 <h2>Häufige Fragen</h2>
 <details><summary>Sieht man, dass ich behandelt wurde?</summary><p>Bei richtiger Dosierung nicht. Ein gut behandeltes Gesicht sieht nicht behandelt aus – nur erholt. Die Mimik bleibt vollständig erhalten.</p></details><details><summary>Tut die Behandlung weh?</summary><p>Die Einstiche mit der sehr feinen Nadel fühlen sich wie kleine Nadelstiche an. Die meisten Patientinnen empfinden die Behandlung als gut erträglich.</p></details><details><summary>Wann sollte ich vor einem wichtigen Anlass behandeln?</summary><p>Planen Sie Hochzeit, Fototermin oder Urlaub mindestens drei bis vier Wochen nach der Behandlung – dann ist das Ergebnis vollständig ausgeprägt.</p></details><details><summary>Was passiert, wenn ich nicht nachbehandeln lasse?</summary><p>Die Wirkung lässt nach einigen Monaten von selbst nach und die Muskelaktivität kehrt vollständig zurück. Es entsteht kein „Rebound-Effekt“.</p></details>
-<h2>Weiterführende Beiträge</h2>
+<div class="medblock"><h2>Medizinische Anwendungen</h2><p class="mb-lead">Botulinumtoxin wird nicht nur ästhetisch eingesetzt. Bei einigen Beschwerdebildern ist es eine anerkannte Behandlungsoption – hier geht es nicht um das Aussehen, sondern um konkrete Symptome.</p><div class="mb-list"><a href="hyperhidrose-graz.html"><b>Übermäßiges Schwitzen</b><span>Hyperhidrose an Achseln und Händen – deutlich reduzierte Schweißbildung für mehrere Monate.</span></a><a href="bruxismus-graz.html"><b>Zähneknirschen</b><span>Entlastung des Kaumuskels bei Bruxismus – gegen Kieferschmerzen und Zahnabrieb.</span></a><a href="migraene-graz.html"><b>Chronische Migräne</b><span>Botulinumtoxin nach standardisiertem Schema zur Reduktion von Migränetagen.</span></a></div></div><h2>Weiterführende Beiträge</h2>
 <ul class="rel-links"><li><a href="wissen-botox.html">Botox – was Sie wirklich erwartet</a></li><li><a href="wissen-schmerzen.html">Schmerzen &amp; Betäubung</a></li><li><a href="wissen-nachsorge.html">Nachsorge nach der Behandlung</a></li></ul>
 </article>
 <div class="disclaimer">Diese Seite dient der allgemeinen Information und ersetzt keine persönliche ärztliche Beratung. Jede medizinische Behandlung ist mit Risiken verbunden, über die individuell aufgeklärt wird.</div>
@@ -375,6 +399,22 @@ body.mopen{overflow:hidden}
   s.addEventListener('click',close);
   var c=document.getElementById('mClose'); if(c)c.addEventListener('click',close);
   d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+<script>
+(function(){
+  var imgs=document.querySelectorAll('figure.tfig img,figure.zones img');
+  if(!imgs.length) return;
+  var b=document.createElement('div');b.className='lbox';
+  b.innerHTML='<button class="lbox-close" type="button" aria-label="Schließen">&times;</button><img alt="">';
+  document.body.appendChild(b);
+  var big=b.querySelector('img');
+  function close(){b.classList.remove('open');document.body.style.overflow='';}
+  imgs.forEach(function(i){i.addEventListener('click',function(){
+    big.src=i.currentSrc||i.src;big.alt=i.alt||'';
+    b.classList.add('open');document.body.style.overflow='hidden';});});
+  b.addEventListener('click',close);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
 </script>
