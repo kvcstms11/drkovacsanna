@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head><script id="cookieyes" src="https://cdn-cookieyes.com/client_data/c585746599bc514ffe75cd4ed23e63e5/script.js" type="text/javascript"></script><!-- Google Tag Manager -->
+<!DOCTYPE html>
+
+<html lang="en"><head><script id="cookieyes" src="https://cdn-cookieyes.com/client_data/c585746599bc514ffe75cd4ed23e63e5/script.js" type="text/javascript"></script><!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -41,6 +43,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     b.classList.add('open');document.body.style.overflow='hidden';});});
   b.addEventListener('click',close);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+<script>
+(function(){
+  window.dataLayer=window.dataLayer||[];
+  function push(name,extra){var d={event:name,page_path:location.pathname};
+    if(extra)for(var k in extra)d[k]=extra[k];window.dataLayer.push(d);}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
+    var t=(a.textContent||'').trim().slice(0,40);
+    if(h.indexOf('termin.html')>-1)push('booking_click',{link_text:t,location:a.className||'link'});
+    else if(h.indexOf('wa.me')>-1)push('whatsapp_click',{link_text:t});
+    else if(h.indexOf('mailto:')===0)push('email_click',{link_text:t});
+    else if(h.indexOf('maps.app.goo.gl')>-1||h.indexOf('google.com/maps')>-1)push('maps_click',{});
+  },true);
+  var f=document.getElementById('kform');
+  if(f)f.addEventListener('submit',function(){push('contact_form_submit',{});});
+  var cal=document.getElementById('offisyCalendar');
+  if(cal){
+    push('booking_page_view',{});
+    var t0=Date.now(),sent=false;
+    setTimeout(function(){if(!sent){sent=true;push('booking_engaged',{seconds:30});}},30000);
+  }
 })();
 </script>
 </body></html>
