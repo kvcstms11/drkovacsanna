@@ -2,7 +2,7 @@
 (function () {
   var L = (document.documentElement.lang || "de").slice(0, 2);
   if (L !== "hu" && L !== "en") L = "de";
-  var P = L === "de" ? "" : "../";
+  var P = ""; // Ziele sind seitenrelativ: en/ und hu/ haben eigene Seiten
 
   var T = {
     de: {
