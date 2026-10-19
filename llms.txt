@@ -1,60 +1,215 @@
-# Dr. Anna Kovács – Ästhetische Medizin Graz
+# Dr. Anna Kovács – Ästhetische Medizin in Graz-Andritz
 
-> Dr. Anna Kovács ist Ärztin für Allgemeinmedizin, spezialisiert auf minimalinvasive Methoden der ästhetischen Medizin in Graz, Österreich. Website: https://drannakovacs.at/
+> Dr. Anna Judit Kovács ist Wahlärztin für Allgemeinmedizin mit Spezialisierung auf
+> minimalinvasive Methoden der ästhetischen Medizin. Ihre Ordination befindet sich in
+> Graz-Andritz, Steiermark, Österreich. Beratung und Behandlung auf Deutsch, Ungarisch
+> und Englisch. Website: https://drannakovacs.at/
+
+## Ordination und Kontakt
+
+- Anschrift: Andritzer Reichsstraße 44, 8045 Graz, Österreich (Stadtteil Andritz)
+- Koordinaten: 47.10428, 15.42131
+- E-Mail: info@drannakovacs.at
+- Telefon: +43 677 64077872
+- Ordinationszeiten: nach Vereinbarung
+- Terminbuchung (Online-Kalender): https://drannakovacs.at/termin.html
+- Kontaktseite mit Anfahrt und Formular: https://drannakovacs.at/kontakt.html
+- Abrechnung: Wahlärztin, keine Kassenverträge. Ästhetische Behandlungen sind
+  Privatleistungen und werden nicht von der Krankenversicherung erstattet.
+- Behandlungssprachen: Deutsch, Ungarisch, Englisch
 
 ## Über die Ärztin
 
-- Allgemeinmedizinerin, spezialisiert auf minimalinvasive ästhetische Medizin
-- Studium der Humanmedizin: Universität Szeged & Medizinische Universität Wien
-- Ausbildung zur Ärztin für Allgemeinmedizin in Niederösterreich und der Steiermark, notärztlicher Lehrgang
-- Empfängerin des 25. Jubiläumsstipendiums der American Academy of Aesthetic Medicine (AAAM) – eine von nur drei Empfängerinnen weltweit
-- Philosophie: Die Spuren der Zeit sanft reduzieren, natürliche Ergebnisse ohne Verlust der Natürlichkeit
-- Sprachen: Deutsch, Ungarisch, Englisch
-- Standort: Graz, Steiermark, Österreich
-- Terminbuchung: https://www.schoenheit2go.at/terminkalender-drkovacs/
+- Wahlärztin für Allgemeinmedizin, spezialisiert auf minimalinvasive ästhetische Medizin
+- Studium der Humanmedizin: Universität Szeged und Medizinische Universität Wien
+- Ausbildung zur Ärztin für Allgemeinmedizin in Niederösterreich und der Steiermark,
+  notärztlicher Lehrgang
+- Empfängerin des 25. Jubiläumsstipendiums der American Academy of Aesthetic Medicine
+  (AAAM) – eine von drei Empfängerinnen weltweit
+- Mitglied der Ärztekammer für Steiermark
+- Behandlungsphilosophie: die Spuren der Zeit sanft reduzieren, ohne die Natürlichkeit
+  des Gesichts zu verändern
+- Qualifikationen und Zertifikate: https://drannakovacs.at/fortbildungen.html
 
 ## Behandlungen
 
-- Botox / Botulinumtoxin: Behandlung mimischer Falten, natürliches frisches Erscheinungsbild; auch Migränebehandlung
-- Hyaluronsäure-Filler: Lippen- und Gesichtsvolumen, Faltenbehandlung
-- Gesichtsharmonisierung: Full-Face-Behandlung mit Hyaluronsäure nach individueller Gesichtsanalyse
-- Microneedling: Anregung der natürlichen Hautregeneration
-- Plasma Lifting (PRP): Wachstumsfaktoren aus Eigenblut zur Hautzellregeneration
-- Mesotherapie: Direkte Einbringung von Nährstoffen in die Haut (Diplom Mesotherapie Ästhetik)
-- PDO Fadenlifting: Fadenlifting mit resorbierbaren Fäden
-- Biostimulatoren: Calciumhydroxylapatit-Behandlungen (Novuma, Calhydra) zur Kollagenstimulation
-- Skinbooster / Hautqualität: Tiefenhydratisierung und Strukturverbesserung
+- Faltenbehandlung (Muskelrelaxans) – mimische Falten an Stirn, Zornesfalte, Krähenfüße;
+  kleine Zonen wie Lipflip, Gummy Smile, DAO/Mundwinkel, Bunny Lines; Nefertiti Lift:
+  https://drannakovacs.at/botox-graz.html
+- Hyaluronsäure-Filler – Volumen und Konturen im Gesicht:
+  https://drannakovacs.at/hyaluron-graz.html
+- Lippenunterspritzung – Volumen, Form und Kontur der Lippen:
+  https://drannakovacs.at/lippen-graz.html
+- Skinbooster (Profhilo) – Tiefenhydratisierung und Hautqualität:
+  https://drannakovacs.at/skinbooster-graz.html
+- Polynukleotide (Polyphil) – Regeneration für Gesicht und Augenpartie:
+  https://drannakovacs.at/polynukleotide-graz.html
+- Biostimulatoren – Kollagenaufbau mit Radiesse hyperdiluted, Sculptra, Profhilo
+  Structura: https://drannakovacs.at/biostimulatoren-graz.html
+- Mesotherapie (NCTF 135 HA) – Wirkstoffe direkt in die Haut:
+  https://drannakovacs.at/mesotherapie-graz.html
+- Medizinisches Microneedling – auch als Plasma Needling in Kombination mit PRP:
+  https://drannakovacs.at/microneedling-graz.html
+- PRP / Plasma Lifting (Eigenbluttherapie) – Gesicht, Hals und Dekolleté sowie Kopfhaut
+  und Haare, einschließlich Nachbehandlung nach Haartransplantation:
+  https://drannakovacs.at/prp-graz.html
+- Skin Specials – kombinierte Behandlungsrituale:
+  https://drannakovacs.at/skin-specials-graz.html
+- Hylase – Auflösen von Hyaluronsäure, auch bei Behandlungen anderer Anbieter:
+  https://drannakovacs.at/hylase-graz.html
+- Hyperhidrose – übermäßiges Schwitzen an Achseln und Händen, Traptox:
+  https://drannakovacs.at/hyperhidrose-graz.html
+- Bruxismus – Zähneknirschen, Masseter-Behandlung / Facial Slimming:
+  https://drannakovacs.at/bruxismus-graz.html
+- Chronische Migräne – Behandlung nach ärztlicher Indikationsstellung:
+  https://drannakovacs.at/migraene-graz.html
 
-## Fortbildungen (Auswahl)
+## Preise (Richtwerte, Stand Oktober 2026)
 
-- AAAM Level 1 Certificate Course in Aesthetic Medicine
-- Full-face Harmonization with Hyaluronic Acid Following Facial Analysis – Teoxane Academy
-- Advanced Botulinum Toxin Hands-on Training – MdExpert Pharma
-- Management von Komplikationen nach Filler- & Botulinumtoxin-Injektionen – Teoxane Academy
-- Croquis PDO Facelifting Hands-on Training – MdExpert Pharma
-- Zahlreiche weitere Hands-on-Trainings an der Teoxane Academy Budapest
+Vollständige Preisliste: https://drannakovacs.at/preisliste.html
 
-## Patientenbewertungen
+- Ärztliches Beratungsgespräch: € 70,– (wird bei einer Behandlung innerhalb von
+  3 Monaten vollständig angerechnet)
+- Faltenbehandlung: 1 Zone € 190,–, 2 Zonen € 290,–, 3 Zonen € 390,–,
+  kleine Zonen € 120,–, Nefertiti Lift € 350,–
+- Masseter-Behandlung bei Bruxismus: € 350,–
+- Behandlung gegen Achselschweiß oder Schweißhände: ab € 500,–
+- Traptox: ab € 500,–
+- Migräne-Behandlung: ab € 390,–
+- Hyaluronsäure-Filler: 1 ml € 350,–, 2 ml € 600,–, 3 ml € 830,–, 4 ml € 1.050,–
+- Hylase (pro Sitzung): € 250,–
+- Skinbooster Profhilo (2 ml): € 350,–
+- Mesotherapie NCTF 135 HA: € 280,–
+- Polynukleotide Polyphil Gesicht oder Eye: je € 320,–
+- Biostimulatoren: Radiesse hyperdiluted € 490,–, Sculptra € 490,–,
+  Profhilo Structura € 450,–
+- Medizinisches Microneedling: Full Face und Hals € 300,–, mit Dekolleté € 350,–,
+  Plasma Needling mit PRP € 360,–
+- PRP: Gesicht, Hals und Dekolleté € 250,–, Haare € 250,–
+- Skin Specials: € 350,– bis € 650,– je nach Ritual
 
-Durchgehend 5-Sterne-Bewertungen auf Google. Patienten heben hervor: natürliche Ergebnisse, ausführliche Beratung, Freundlichkeit, sorgfältige und nahezu schmerzfreie Behandlung, Empathie.
+Alle Preise inklusive gesetzlicher Abgaben. Die genauen Kosten hängen vom individuellen
+Befund, dem behandelten Areal und der benötigten Produktmenge ab und werden im
+ärztlichen Beratungsgespräch festgelegt.
 
-## Wissenswertes (Ratgeber-Artikel)
+## Wissenswertes (Ratgeber-Artikel, Deutsch)
+
+Übersicht: https://drannakovacs.at/wissen.html
 
 - Botox – was Sie wirklich erwartet: https://drannakovacs.at/wissen-botox.html
 - Lippenunterspritzung mit Hyaluronsäure: https://drannakovacs.at/wissen-lippen.html
 - Gesichtsfiller und Gesichtsharmonisierung: https://drannakovacs.at/wissen-gesichtsfiller.html
 - Skinbooster und Profhilo – Hautqualität von innen: https://drannakovacs.at/wissen-skinbooster.html
+- Biostimulatoren – Kollagenaufbau aus eigener Kraft: https://drannakovacs.at/wissen-biostimulatoren.html
+- Mesotherapie – Wirkstoffe direkt in die Haut: https://drannakovacs.at/wissen-mesotherapie.html
 - Microneedling – Regeneration durch feine Impulse: https://drannakovacs.at/wissen-microneedling.html
 - PRP / Plasma Lifting – Regeneration aus Eigenblut: https://drannakovacs.at/wissen-prp.html
-- Mesotherapie – Wirkstoffe direkt in die Haut: https://drannakovacs.at/wissen-mesotherapie.html
-- PDO-Fadenlifting – Straffung ohne Skalpell: https://drannakovacs.at/wissen-pdo.html
-- Biostimulatoren – Kollagenaufbau mit CaHA: https://drannakovacs.at/wissen-biostimulatoren.html
-- Das Erstgespräch – Ablauf der Konsultation: https://drannakovacs.at/wissen-konsultation.html
+- PRP nach Haartransplantation – was die Eigenblutbehandlung unterstützen kann: https://drannakovacs.at/wissen-prp-haartransplantation.html
+- Das Erstgespräch – so läuft Ihre erste Konsultation ab: https://drannakovacs.at/wissen-konsultation.html
 - Mythen und Fakten der ästhetischen Medizin: https://drannakovacs.at/wissen-mythen.html
-- Nachsorge und richtige Zeitplanung: https://drannakovacs.at/wissen-nachsorge.html
+- Nach der Behandlung – Nachsorge und richtige Zeitplanung: https://drannakovacs.at/wissen-nachsorge.html
 - Tut das weh? Schmerzen und Betäubung: https://drannakovacs.at/wissen-schmerzen.html
 - Sicherheit: Warum die ärztliche Hand zählt: https://drannakovacs.at/wissen-sicherheit.html
-- Schwangerschaft und Stillzeit: https://drannakovacs.at/wissen-schwangerschaft.html
+- Schwangerschaft und Stillzeit – was geht, was nicht: https://drannakovacs.at/wissen-schwangerschaft.html
 - Wann beginnen? Prävention und Korrektur: https://drannakovacs.at/wissen-wann-beginnen.html
-- Wie wähle ich eine gute Behandlerin? Checkliste: https://drannakovacs.at/wissen-arztwahl.html
-- Kombinierte Behandlungen: https://drannakovacs.at/wissen-kombination.html
+- Wie wähle ich eine gute Behandlerin? Eine Checkliste: https://drannakovacs.at/wissen-arztwahl.html
+- Kombinierte Behandlungen – was passt zusammen?: https://drannakovacs.at/wissen-kombination.html
+
+## Vergleichsbeiträge (Deutsch)
+
+- Botox oder Hyaluron – was ist der Unterschied?: https://drannakovacs.at/vergleich-botox-hyaluron.html
+- Skinbooster oder Polynukleotide – was ist der Unterschied?: https://drannakovacs.at/vergleich-skinbooster-polynukleotide.html
+- Lippenfiller oder Lip Flip – was passt zu mir?: https://drannakovacs.at/vergleich-lippen-filler-lipflip.html
+- PRP oder Microneedling – was bringt mehr?: https://drannakovacs.at/vergleich-prp-microneedling.html
+
+## Magyar nyelvű oldalak (Hungarian pages)
+
+Főoldal: https://drannakovacs.at/hu/
+
+- Botox Grazban: https://drannakovacs.at/hu/botox-graz.html
+- Hialuronsavas töltés Grazban: https://drannakovacs.at/hu/hyaluron-graz.html
+- Ajakfeltöltés Grazban: https://drannakovacs.at/hu/lippen-graz.html
+- Skinbooster Grazban: https://drannakovacs.at/hu/skinbooster-graz.html
+- Polinukleotidok (Polyphil) Grazban: https://drannakovacs.at/hu/polynukleotide-graz.html
+- Biostimulátorok Grazban: https://drannakovacs.at/hu/biostimulatoren-graz.html
+- Mezoterápia Grazban: https://drannakovacs.at/hu/mesotherapie-graz.html
+- Orvosi microneedling Grazban: https://drannakovacs.at/hu/microneedling-graz.html
+- PRP-kezelés (plazma lifting) Grazban: https://drannakovacs.at/hu/prp-graz.html
+- PRP hajbeültetés után – amiben a saját plazma segíthet: https://drannakovacs.at/hu/wissen-prp-haartransplantation.html
+- Skin Specials Grazban: https://drannakovacs.at/hu/skin-specials-graz.html
+- Hylase Grazban – hialuronsav feloldása: https://drannakovacs.at/hu/hylase-graz.html
+- Túlzott izzadás kezelése Grazban: https://drannakovacs.at/hu/hyperhidrose-graz.html
+- Fogcsikorgatás kezelése Grazban: https://drannakovacs.at/hu/bruxismus-graz.html
+- Krónikus migrén kezelése Grazban: https://drannakovacs.at/hu/migraene-graz.html
+- Botox vagy hialuron – mi a különbség?: https://drannakovacs.at/hu/vergleich-botox-hyaluron.html
+- Skinbooster vagy polinukleotidok – mi a különbség?: https://drannakovacs.at/hu/vergleich-skinbooster-polynukleotide.html
+- Ajakfeltöltés vagy lip flip – melyik való nekem?: https://drannakovacs.at/hu/vergleich-lippen-filler-lipflip.html
+- PRP vagy microneedling – melyik ad többet?: https://drannakovacs.at/hu/vergleich-prp-microneedling.html
+- Árlista: https://drannakovacs.at/hu/preisliste.html
+- Végzettség és oklevelek: https://drannakovacs.at/hu/fortbildungen.html
+- Kapcsolat: https://drannakovacs.at/hu/kontakt.html
+- Időpontfoglalás: https://drannakovacs.at/hu/termin.html
+
+## English pages
+
+Home: https://drannakovacs.at/en/
+
+- Knowledge base overview: https://drannakovacs.at/en/wissen.html
+- Botox in Graz: https://drannakovacs.at/en/botox-graz.html
+- Hyaluronic acid fillers in Graz: https://drannakovacs.at/en/hyaluron-graz.html
+- Lip augmentation in Graz: https://drannakovacs.at/en/lippen-graz.html
+- Skin boosters in Graz: https://drannakovacs.at/en/skinbooster-graz.html
+- Polynucleotides (Polyphil) in Graz: https://drannakovacs.at/en/polynukleotide-graz.html
+- Biostimulators in Graz: https://drannakovacs.at/en/biostimulatoren-graz.html
+- Mesotherapy in Graz: https://drannakovacs.at/en/mesotherapie-graz.html
+- Medical microneedling in Graz: https://drannakovacs.at/en/microneedling-graz.html
+- PRP treatment (plasma lifting) in Graz: https://drannakovacs.at/en/prp-graz.html
+- PRP after a hair transplant – what the treatment can support: https://drannakovacs.at/en/wissen-prp-haartransplantation.html
+- Skin Specials in Graz: https://drannakovacs.at/en/skin-specials-graz.html
+- Hylase in Graz – dissolving hyaluronic acid: https://drannakovacs.at/en/hylase-graz.html
+- Treating excessive sweating in Graz: https://drannakovacs.at/en/hyperhidrose-graz.html
+- Treating teeth grinding in Graz: https://drannakovacs.at/en/bruxismus-graz.html
+- Treating chronic migraine in Graz: https://drannakovacs.at/en/migraene-graz.html
+- Price list: https://drannakovacs.at/en/preisliste.html
+- Qualifications and certificates: https://drannakovacs.at/en/fortbildungen.html
+- Contact: https://drannakovacs.at/en/kontakt.html
+- Book an appointment: https://drannakovacs.at/en/termin.html
+
+### English knowledge base articles
+
+- Botox – what to really expect: https://drannakovacs.at/en/wissen-botox.html
+- Lip augmentation with hyaluronic acid: https://drannakovacs.at/en/wissen-lippen.html
+- Facial fillers and facial harmonisation: https://drannakovacs.at/en/wissen-gesichtsfiller.html
+- Skin boosters and Profhilo – skin quality from within: https://drannakovacs.at/en/wissen-skinbooster.html
+- Biostimulators – building collagen from within: https://drannakovacs.at/en/wissen-biostimulatoren.html
+- Mesotherapy – active ingredients directly into the skin: https://drannakovacs.at/en/wissen-mesotherapie.html
+- Microneedling – regeneration through fine impulses: https://drannakovacs.at/en/wissen-microneedling.html
+- PRP / plasma lifting – regeneration from your own blood: https://drannakovacs.at/en/wissen-prp.html
+- The first consultation – what to expect: https://drannakovacs.at/en/wissen-konsultation.html
+- Myths and facts in aesthetic medicine: https://drannakovacs.at/en/wissen-mythen.html
+- After the treatment – aftercare and planning your timing: https://drannakovacs.at/en/wissen-nachsorge.html
+- Does it hurt? Pain and anaesthesia: https://drannakovacs.at/en/wissen-schmerzen.html
+- Safety: why the physician's hand matters: https://drannakovacs.at/en/wissen-sicherheit.html
+- Pregnancy and breastfeeding – what is possible and what is not: https://drannakovacs.at/en/wissen-schwangerschaft.html
+- When to start? Prevention and correction: https://drannakovacs.at/en/wissen-wann-beginnen.html
+- How do I choose a good practitioner? A checklist: https://drannakovacs.at/en/wissen-arztwahl.html
+- Combined treatments – what works well together?: https://drannakovacs.at/en/wissen-kombination.html
+
+### English comparison articles
+
+- Botox or hyaluronic acid – what is the difference?: https://drannakovacs.at/en/vergleich-botox-hyaluron.html
+- Skin boosters or polynucleotides – what is the difference?: https://drannakovacs.at/en/vergleich-skinbooster-polynukleotide.html
+- Lip filler or lip flip – which suits me?: https://drannakovacs.at/en/vergleich-lippen-filler-lipflip.html
+- PRP or microneedling – which achieves more?: https://drannakovacs.at/en/vergleich-prp-microneedling.html
+
+## Rechtliches
+
+- Impressum: https://drannakovacs.at/impressum.html
+- Datenschutzerklärung: https://drannakovacs.at/datenschutz.html
+
+## Hinweis
+
+Die Inhalte dieser Website dienen der allgemeinen, sachlichen Patienteninformation und
+ersetzen keine persönliche ärztliche Beratung, Untersuchung oder Diagnose. Über Nutzen
+und Risiken einer Behandlung wird vor jedem Eingriff individuell aufgeklärt. Die
+Darstellung richtet sich nach den Vorgaben der österreichischen Ärztewerbeordnung.
