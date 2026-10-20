@@ -125,6 +125,7 @@ Befund, dem behandelten Areal und der benötigten Produktmenge ab und werden im
 ## Magyar nyelvű oldalak (Hungarian pages)
 
 Főoldal: https://drannakovacs.at/hu/
+Tudástár (áttekintés): https://drannakovacs.at/hu/wissen.html
 
 - Botox Grazban: https://drannakovacs.at/hu/botox-graz.html
 - Hialuronsavas töltés Grazban: https://drannakovacs.at/hu/hyaluron-graz.html
