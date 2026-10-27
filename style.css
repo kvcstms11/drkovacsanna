@@ -4,7 +4,7 @@
 .sources li{margin:0 0 10px;overflow-wrap:anywhere;word-break:break-word}
 .sources a{color:inherit;text-decoration:underline;text-decoration-color:rgba(205,143,130,.6);text-underline-offset:2px}
 /* Anfahrtsvideo + Link auf Behandlungsseiten */
-#anfahrt{scroll-margin-top:110px}
+#anfahrt,#parken{scroll-margin-top:110px}
 .k-video{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px}
 .k-video a{display:inline-block;padding:9px 16px;border:1px solid rgba(205,143,130,.55);color:var(--navy);text-decoration:none;font-size:.78rem;letter-spacing:.06em;transition:background .25s}
 .k-video a:hover{background:var(--blush)}
